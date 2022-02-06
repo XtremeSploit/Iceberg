@@ -107,6 +107,7 @@ MainFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 MainFrame.BackgroundTransparency = 1.000
 MainFrame.Position = UDim2.new(0.303000003, 0, 0.282999992, 0)
 MainFrame.Size = UDim2.new(0, 455, 0, 282)
+MainFrame.Visible = false
 MainFrame.Image = "rbxassetid://3570695787"
 MainFrame.ImageColor3 = Color3.fromRGB(10, 10, 10)
 MainFrame.ScaleType = Enum.ScaleType.Slice
@@ -1180,15 +1181,15 @@ SvLink.TextXAlignment = Enum.TextXAlignment.Left
 
 -- Scripts:
 
-local function YTXJ_fake_script() -- HideButton.LocalScript 
+local function TCKDPSP_fake_script() -- HideButton.LocalScript 
 	local script = Instance.new('LocalScript', HideButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(YTXJ_fake_script)()
-local function OFBONL_fake_script() -- Home.LocalScript 
+coroutine.wrap(TCKDPSP_fake_script)()
+local function LDDABQY_fake_script() -- Home.LocalScript 
 	local script = Instance.new('LocalScript', Home)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1200,8 +1201,8 @@ local function OFBONL_fake_script() -- Home.LocalScript
 		script.Parent.Parent.Parent.Parent.TabsFrame.ServerTab.Visible = false
 	end)
 end
-coroutine.wrap(OFBONL_fake_script)()
-local function VSJXZ_fake_script() -- ExecTabButton.LocalScript 
+coroutine.wrap(LDDABQY_fake_script)()
+local function ROYB_fake_script() -- ExecTabButton.LocalScript 
 	local script = Instance.new('LocalScript', ExecTabButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1213,8 +1214,8 @@ local function VSJXZ_fake_script() -- ExecTabButton.LocalScript
 		script.Parent.Parent.Parent.Parent.TabsFrame.ServerTab.Visible = false
 	end)
 end
-coroutine.wrap(VSJXZ_fake_script)()
-local function HEMZNSM_fake_script() -- Settings.LocalScript 
+coroutine.wrap(ROYB_fake_script)()
+local function XZTKAAM_fake_script() -- Settings.LocalScript 
 	local script = Instance.new('LocalScript', Settings)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1226,8 +1227,8 @@ local function HEMZNSM_fake_script() -- Settings.LocalScript
 		script.Parent.Parent.Parent.Parent.TabsFrame.ServerTab.Visible = false
 	end)
 end
-coroutine.wrap(HEMZNSM_fake_script)()
-local function LYTPM_fake_script() -- MusicPlyrTabButton.LocalScript 
+coroutine.wrap(XZTKAAM_fake_script)()
+local function GOKRL_fake_script() -- MusicPlyrTabButton.LocalScript 
 	local script = Instance.new('LocalScript', MusicPlyrTabButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1239,8 +1240,8 @@ local function LYTPM_fake_script() -- MusicPlyrTabButton.LocalScript
 		script.Parent.Parent.Parent.Parent.TabsFrame.ServerTab.Visible = false
 	end)
 end
-coroutine.wrap(LYTPM_fake_script)()
-local function MMOAV_fake_script() -- CreditsTabButton.LocalScript 
+coroutine.wrap(GOKRL_fake_script)()
+local function BSKGZD_fake_script() -- CreditsTabButton.LocalScript 
 	local script = Instance.new('LocalScript', CreditsTabButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1252,8 +1253,8 @@ local function MMOAV_fake_script() -- CreditsTabButton.LocalScript
 		script.Parent.Parent.Parent.Parent.TabsFrame.ServerTab.Visible = false
 	end)
 end
-coroutine.wrap(MMOAV_fake_script)()
-local function IXYOS_fake_script() -- ServerTabButton.LocalScript 
+coroutine.wrap(BSKGZD_fake_script)()
+local function YXAP_fake_script() -- ServerTabButton.LocalScript 
 	local script = Instance.new('LocalScript', ServerTabButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1265,8 +1266,8 @@ local function IXYOS_fake_script() -- ServerTabButton.LocalScript
 		script.Parent.Parent.Parent.Parent.TabsFrame.ServerTab.Visible = true
 	end)
 end
-coroutine.wrap(IXYOS_fake_script)()
-local function ZVPOEDM_fake_script() -- Logo_2.LocalScript 
+coroutine.wrap(YXAP_fake_script)()
+local function GDQAD_fake_script() -- Logo_2.LocalScript 
 	local script = Instance.new('LocalScript', Logo_2)
 
 	local Players = game:GetService("Players")
@@ -1284,8 +1285,8 @@ local function ZVPOEDM_fake_script() -- Logo_2.LocalScript
 	imageLabel.Image = content
 	imageLabel.Size = UDim2.new(0,  65, 0,  65)
 end
-coroutine.wrap(ZVPOEDM_fake_script)()
-local function UFXKGXW_fake_script() -- PlayerName.LocalScript 
+coroutine.wrap(GDQAD_fake_script)()
+local function VZUSHC_fake_script() -- PlayerName.LocalScript 
 	local script = Instance.new('LocalScript', PlayerName)
 
 	local ok = script.Parent.Parent.PlayerName
@@ -1294,8 +1295,8 @@ local function UFXKGXW_fake_script() -- PlayerName.LocalScript
 	
 	ok.Text = player.DisplayName
 end
-coroutine.wrap(UFXKGXW_fake_script)()
-local function ZUYNAHW_fake_script() -- IcebergStatus.LocalScript 
+coroutine.wrap(VZUSHC_fake_script)()
+local function WSOKKF_fake_script() -- IcebergStatus.LocalScript 
 	local script = Instance.new('LocalScript', IcebergStatus)
 
 	local ok = script.Parent.Parent.IcebergStatus
@@ -1303,14 +1304,14 @@ local function ZUYNAHW_fake_script() -- IcebergStatus.LocalScript
 	
 	ok.Text = version
 end
-coroutine.wrap(ZUYNAHW_fake_script)()
-local function KJYVTCE_fake_script() -- ChangeLog.LocalScript 
+coroutine.wrap(WSOKKF_fake_script)()
+local function NECHGZ_fake_script() -- ChangeLog.LocalScript 
 	local script = Instance.new('LocalScript', ChangeLog)
 
 	script.Parent.Text = game:HttpGet("https://raw.githubusercontent.com/XtremeSploit/Iceberg/main/Change%20Logs")
 end
-coroutine.wrap(KJYVTCE_fake_script)()
-local function XNFI_fake_script() -- GameName.LocalScript 
+coroutine.wrap(NECHGZ_fake_script)()
+local function YVGDN_fake_script() -- GameName.LocalScript 
 	local script = Instance.new('LocalScript', GameName)
 
 	local PlaceId = game.PlaceId
@@ -1322,8 +1323,8 @@ local function XNFI_fake_script() -- GameName.LocalScript
 		ok.Text = info.Name
 	end
 end
-coroutine.wrap(XNFI_fake_script)()
-local function JKWLN_fake_script() -- GameID.LocalScript 
+coroutine.wrap(YVGDN_fake_script)()
+local function DIORWB_fake_script() -- GameID.LocalScript 
 	local script = Instance.new('LocalScript', GameID)
 
 	local PlaceId = game.PlaceId
@@ -1331,8 +1332,8 @@ local function JKWLN_fake_script() -- GameID.LocalScript
 	
 	ok.Text = PlaceId
 end
-coroutine.wrap(JKWLN_fake_script)()
-local function DJZU_fake_script() -- PlayingTime.LocalScript 
+coroutine.wrap(DIORWB_fake_script)()
+local function IHQRW_fake_script() -- PlayingTime.LocalScript 
 	local script = Instance.new('LocalScript', PlayingTime)
 
 	-- the script just shows the time that u were in server, not the acuall server age
@@ -1358,8 +1359,8 @@ local function DJZU_fake_script() -- PlayingTime.LocalScript
 	
 	
 end
-coroutine.wrap(DJZU_fake_script)()
-local function FPMBV_fake_script() -- igPlayers.LocalScript 
+coroutine.wrap(IHQRW_fake_script)()
+local function PKCCPVN_fake_script() -- igPlayers.LocalScript 
 	local script = Instance.new('LocalScript', igPlayers)
 
 	local Players = game:GetService("Players")
@@ -1380,8 +1381,8 @@ local function FPMBV_fake_script() -- igPlayers.LocalScript
 	end
 	
 end
-coroutine.wrap(FPMBV_fake_script)()
-local function GNQM_fake_script() -- PlayerFps.LocalScript 
+coroutine.wrap(PKCCPVN_fake_script)()
+local function JRRF_fake_script() -- PlayerFps.LocalScript 
 	local script = Instance.new('LocalScript', PlayerFps)
 
 	local RunService = game:GetService("RunService")
@@ -1405,8 +1406,8 @@ local function GNQM_fake_script() -- PlayerFps.LocalScript
 	Start = TimeFunction()
 	RunService.Heartbeat:Connect(HeartbeatUpdate)
 end
-coroutine.wrap(GNQM_fake_script)()
-local function GPMW_fake_script() -- Executebtn.Functioning 
+coroutine.wrap(JRRF_fake_script)()
+local function XFOXTRW_fake_script() -- Executebtn.Functioning 
 	local script = Instance.new('LocalScript', Executebtn)
 
 	local textEditor = script.Parent.Parent.Frame.ScrollingFrame.EditorFrame.Source
@@ -1414,8 +1415,8 @@ local function GPMW_fake_script() -- Executebtn.Functioning
 		loadstring(textEditor.Text)()
 	end)
 end
-coroutine.wrap(GPMW_fake_script)()
-local function FXJQQX_fake_script() -- delete.LocalScript 
+coroutine.wrap(XFOXTRW_fake_script)()
+local function YHDZ_fake_script() -- delete.LocalScript 
 	local script = Instance.new('LocalScript', delete)
 
 	local txt = script.Parent.Parent.Frame.ScrollingFrame.EditorFrame.Source
@@ -1423,8 +1424,8 @@ local function FXJQQX_fake_script() -- delete.LocalScript
 		txt.Text = ""
 	end)
 end
-coroutine.wrap(FXJQQX_fake_script)()
-local function IGLD_fake_script() -- ScrollingFrame_2.LocalScript 
+coroutine.wrap(YHDZ_fake_script)()
+local function DGIB_fake_script() -- ScrollingFrame_2.LocalScript 
 	local script = Instance.new('LocalScript', ScrollingFrame_2)
 
 	-- falsepikawoods
@@ -1610,8 +1611,8 @@ local function IGLD_fake_script() -- ScrollingFrame_2.LocalScript
 	
 	
 end
-coroutine.wrap(IGLD_fake_script)()
-local function BCCT_fake_script() -- saveScripts.LocalScript 
+coroutine.wrap(DGIB_fake_script)()
+local function ZEZLB_fake_script() -- saveScripts.LocalScript 
 	local script = Instance.new('LocalScript', saveScripts)
 
 	local textEditor = script.Parent.Parent.Frame.ScrollingFrame.EditorFrame.Source
@@ -1626,8 +1627,8 @@ local function BCCT_fake_script() -- saveScripts.LocalScript
 	end)
 	
 end
-coroutine.wrap(BCCT_fake_script)()
-local function RVXNRBD_fake_script() -- AutoR6Toggle.Script 
+coroutine.wrap(ZEZLB_fake_script)()
+local function RIUFDRD_fake_script() -- AutoR6Toggle.Script 
 	local script = Instance.new('LocalScript', AutoR6Toggle)
 
 	local toggled = false -- The start state of the toggle
@@ -1653,9 +1654,9 @@ local function RVXNRBD_fake_script() -- AutoR6Toggle.Script
 		end
 	end)
 end
-coroutine.wrap(RVXNRBD_fake_script)()
+coroutine.wrap(RIUFDRD_fake_script)()
 -- AutoR6Toggle.R6OnOff is disabled.
-local function VEDWKY_fake_script() -- SwithcerToggle.Script 
+local function SEIL_fake_script() -- SwithcerToggle.Script 
 	local script = Instance.new('LocalScript', SwithcerToggle)
 
 	local toggled = false -- The start state of the toggle
@@ -1684,8 +1685,8 @@ local function VEDWKY_fake_script() -- SwithcerToggle.Script
 		end
 	end)
 end
-coroutine.wrap(VEDWKY_fake_script)()
-local function ALGFL_fake_script() -- ServerBtn.LocalScript 
+coroutine.wrap(SEIL_fake_script)()
+local function NIGHL_fake_script() -- ServerBtn.LocalScript 
 	local script = Instance.new('LocalScript', ServerBtn)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1697,8 +1698,8 @@ local function ALGFL_fake_script() -- ServerBtn.LocalScript
 	end)
 	
 end
-coroutine.wrap(ALGFL_fake_script)()
-local function KAEP_fake_script() -- MainFrame.Hide/Unhide 
+coroutine.wrap(NIGHL_fake_script)()
+local function QZHUXZC_fake_script() -- MainFrame.Hide/Unhide 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	local userinput = game:GetService("UserInputService")
@@ -1711,8 +1712,8 @@ local function KAEP_fake_script() -- MainFrame.Hide/Unhide
 		end
 	end)
 end
-coroutine.wrap(KAEP_fake_script)()
-local function VOQB_fake_script() -- MainFrame.Dragify 
+coroutine.wrap(QZHUXZC_fake_script)()
+local function HYCX_fake_script() -- MainFrame.Dragify 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	-- Dragify
@@ -1755,8 +1756,8 @@ local function VOQB_fake_script() -- MainFrame.Dragify
 	
 	dragify(script.Parent)
 end
-coroutine.wrap(VOQB_fake_script)()
-local function EWOE_fake_script() -- MainFrame.LodingAnimetion 
+coroutine.wrap(HYCX_fake_script)()
+local function IVZDF_fake_script() -- MainFrame.LodingAnimetion 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	local blur = Instance.new("BlurEffect", game.Lighting)
@@ -1789,4 +1790,4 @@ local function EWOE_fake_script() -- MainFrame.LodingAnimetion
 	wait()
 	script.Parent.Visible = true
 end
-coroutine.wrap(EWOE_fake_script)()
+coroutine.wrap(IVZDF_fake_script)()
