@@ -25,31 +25,33 @@ local TextLabel_2 = Instance.new("TextLabel")
 local TextLabel_3 = Instance.new("TextLabel")
 local Logo_2 = Instance.new("ImageLabel")
 local PlayerName = Instance.new("TextLabel")
-local IcebergStatus = Instance.new("TextLabel")
-local ChangeLogBox = Instance.new("ImageLabel")
+local IcebergBootStrapperStatus = Instance.new("TextLabel")
 local TextLabel_4 = Instance.new("TextLabel")
+local IcebergUIStatus = Instance.new("TextLabel")
+local ChangeLogBox = Instance.new("ImageLabel")
+local TextLabel_5 = Instance.new("TextLabel")
 local ScrollingFrame = Instance.new("ScrollingFrame")
 local ChangeLog = Instance.new("TextLabel")
 local ServerTab = Instance.new("ImageLabel")
 local Frame = Instance.new("ImageLabel")
-local TextLabel_5 = Instance.new("TextLabel")
 local TextLabel_6 = Instance.new("TextLabel")
-local GameName = Instance.new("TextLabel")
 local TextLabel_7 = Instance.new("TextLabel")
-local GameID = Instance.new("TextLabel")
+local GameName = Instance.new("TextLabel")
 local TextLabel_8 = Instance.new("TextLabel")
-local PlayingTime = Instance.new("TextLabel")
+local GameID = Instance.new("TextLabel")
 local TextLabel_9 = Instance.new("TextLabel")
-local igPlayers = Instance.new("TextLabel")
+local PlayingTime = Instance.new("TextLabel")
 local TextLabel_10 = Instance.new("TextLabel")
+local igPlayers = Instance.new("TextLabel")
+local TextLabel_11 = Instance.new("TextLabel")
 local PlayerFps = Instance.new("TextLabel")
 local MusicPlyrTab = Instance.new("ImageLabel")
 local Frame_2 = Instance.new("ImageLabel")
-local TextLabel_11 = Instance.new("TextLabel")
+local TextLabel_12 = Instance.new("TextLabel")
 local MusicBox = Instance.new("ImageLabel")
 local Music = Instance.new("TextBox")
 local play_arrow = Instance.new("ImageButton")
-local TextLabel_12 = Instance.new("TextLabel")
+local TextLabel_13 = Instance.new("TextLabel")
 local NowPlayingBox = Instance.new("ImageLabel")
 local In = Instance.new("ScrollingFrame")
 local UIGridLayout = Instance.new("UIGridLayout")
@@ -77,20 +79,29 @@ local Lines = Instance.new("TextLabel")
 local saveScripts = Instance.new("ImageButton")
 local ScriptNameBox = Instance.new("ImageLabel")
 local ScriptNameBox_2 = Instance.new("TextBox")
+local ScrollingFrame_3 = Instance.new("ScrollingFrame")
+local MainTab = Instance.new("TextButton")
+local TextButton_Roundify_5px = Instance.new("ImageLabel")
+local UIListLayout = Instance.new("UIListLayout")
+local TemplateTab = Instance.new("ImageLabel")
+local Tab = Instance.new("TextButton")
+local CloseTabBtn = Instance.new("ImageButton")
+local zAddTabBtn = Instance.new("TextButton")
+local TextLabel_14 = Instance.new("TextLabel")
 local SettingsTab = Instance.new("ImageLabel")
 local Frame_5 = Instance.new("ImageLabel")
-local TextLabel_13 = Instance.new("TextLabel")
+local TextLabel_15 = Instance.new("TextLabel")
 local AutoR6Toggle = Instance.new("ImageLabel")
 local Button = Instance.new("TextButton")
 local Circle = Instance.new("ImageLabel")
-local TextLabel_14 = Instance.new("TextLabel")
+local TextLabel_16 = Instance.new("TextLabel")
 local ExecutetionTybe = Instance.new("TextLabel")
 local SwithcerToggle = Instance.new("ImageLabel")
 local Button_2 = Instance.new("TextButton")
 local Circle_2 = Instance.new("ImageLabel")
 local CreditsTab = Instance.new("ImageLabel")
 local Frame_6 = Instance.new("ImageLabel")
-local TextLabel_15 = Instance.new("TextLabel")
+local TextLabel_17 = Instance.new("TextLabel")
 local Logo_3 = Instance.new("ImageLabel")
 local ServerBtn = Instance.new("ImageButton")
 local SvLink = Instance.new("TextLabel")
@@ -107,7 +118,6 @@ MainFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 MainFrame.BackgroundTransparency = 1.000
 MainFrame.Position = UDim2.new(0.303000003, 0, 0.282999992, 0)
 MainFrame.Size = UDim2.new(0, 455, 0, 282)
-MainFrame.Visible = false
 MainFrame.Image = "rbxassetid://3570695787"
 MainFrame.ImageColor3 = Color3.fromRGB(10, 10, 10)
 MainFrame.ScaleType = Enum.ScaleType.Slice
@@ -271,8 +281,8 @@ WelcomeBox.Name = "WelcomeBox"
 WelcomeBox.Parent = HomeTab
 WelcomeBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 WelcomeBox.BackgroundTransparency = 1.000
-WelcomeBox.Position = UDim2.new(0.00800000038, 0, 0.00499999989, 0)
-WelcomeBox.Size = UDim2.new(0, 420, 0, 70)
+WelcomeBox.Position = UDim2.new(0.00800007861, 0, 0.00500001945, 0)
+WelcomeBox.Size = UDim2.new(0, 420, 0, 82)
 WelcomeBox.ZIndex = 2
 WelcomeBox.Image = "rbxassetid://3570695787"
 WelcomeBox.ImageColor3 = Color3.fromRGB(15, 15, 15)
@@ -297,11 +307,11 @@ TextLabel_2.TextYAlignment = Enum.TextYAlignment.Top
 TextLabel_3.Parent = WelcomeBox
 TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_3.BackgroundTransparency = 1.000
-TextLabel_3.Position = UDim2.new(0.170000061, 0, 0.49012059, 0)
-TextLabel_3.Size = UDim2.new(0, 138, 0, 29)
+TextLabel_3.Position = UDim2.new(0.170000061, 0, 0.355546266, 0)
+TextLabel_3.Size = UDim2.new(0, 189, 0, 26)
 TextLabel_3.ZIndex = 3
 TextLabel_3.Font = Enum.Font.SourceSans
-TextLabel_3.Text = "Iceberg Version:"
+TextLabel_3.Text = "Bootstrapper Version:"
 TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_3.TextSize = 24.000
 TextLabel_3.TextWrapped = true
@@ -332,27 +342,56 @@ PlayerName.TextWrapped = true
 PlayerName.TextXAlignment = Enum.TextXAlignment.Left
 PlayerName.TextYAlignment = Enum.TextYAlignment.Top
 
-IcebergStatus.Name = "IcebergStatus"
-IcebergStatus.Parent = WelcomeBox
-IcebergStatus.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-IcebergStatus.BackgroundTransparency = 1.000
-IcebergStatus.Position = UDim2.new(0.49000001, 0, 0.5, 0)
-IcebergStatus.Size = UDim2.new(0, 104, 0, 28)
-IcebergStatus.ZIndex = 3
-IcebergStatus.Font = Enum.Font.SourceSans
-IcebergStatus.Text = "Version"
-IcebergStatus.TextColor3 = Color3.fromRGB(255, 255, 255)
-IcebergStatus.TextSize = 24.000
-IcebergStatus.TextWrapped = true
-IcebergStatus.TextXAlignment = Enum.TextXAlignment.Left
-IcebergStatus.TextYAlignment = Enum.TextYAlignment.Top
+IcebergBootStrapperStatus.Name = "IcebergBootStrapperStatus"
+IcebergBootStrapperStatus.Parent = WelcomeBox
+IcebergBootStrapperStatus.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+IcebergBootStrapperStatus.BackgroundTransparency = 1.000
+IcebergBootStrapperStatus.Position = UDim2.new(0.620000064, 0, 0.355999768, 0)
+IcebergBootStrapperStatus.Size = UDim2.new(0, 91, 0, 26)
+IcebergBootStrapperStatus.ZIndex = 3
+IcebergBootStrapperStatus.Font = Enum.Font.SourceSans
+IcebergBootStrapperStatus.Text = "Version"
+IcebergBootStrapperStatus.TextColor3 = Color3.fromRGB(255, 255, 255)
+IcebergBootStrapperStatus.TextSize = 24.000
+IcebergBootStrapperStatus.TextWrapped = true
+IcebergBootStrapperStatus.TextXAlignment = Enum.TextXAlignment.Left
+IcebergBootStrapperStatus.TextYAlignment = Enum.TextYAlignment.Top
+
+TextLabel_4.Parent = WelcomeBox
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0.170000061, 0, 0.615546286, 0)
+TextLabel_4.Size = UDim2.new(0, 93, 0, 23)
+TextLabel_4.ZIndex = 3
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "UI Version:"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextSize = 24.000
+TextLabel_4.TextWrapped = true
+TextLabel_4.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel_4.TextYAlignment = Enum.TextYAlignment.Top
+
+IcebergUIStatus.Name = "IcebergUIStatus"
+IcebergUIStatus.Parent = WelcomeBox
+IcebergUIStatus.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+IcebergUIStatus.BackgroundTransparency = 1.000
+IcebergUIStatus.Position = UDim2.new(0.39142862, 0, 0.615999758, 0)
+IcebergUIStatus.Size = UDim2.new(0, 76, 0, 22)
+IcebergUIStatus.ZIndex = 3
+IcebergUIStatus.Font = Enum.Font.SourceSans
+IcebergUIStatus.Text = "Version"
+IcebergUIStatus.TextColor3 = Color3.fromRGB(255, 255, 255)
+IcebergUIStatus.TextSize = 24.000
+IcebergUIStatus.TextWrapped = true
+IcebergUIStatus.TextXAlignment = Enum.TextXAlignment.Left
+IcebergUIStatus.TextYAlignment = Enum.TextYAlignment.Top
 
 ChangeLogBox.Name = "ChangeLogBox"
 ChangeLogBox.Parent = HomeTab
 ChangeLogBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ChangeLogBox.BackgroundTransparency = 1.000
-ChangeLogBox.Position = UDim2.new(0.00800000038, 0, 0.294, 0)
-ChangeLogBox.Size = UDim2.new(0, 420, 0, 174)
+ChangeLogBox.Position = UDim2.new(0.00800007861, 0, 0.340174943, 0)
+ChangeLogBox.Size = UDim2.new(0, 420, 0, 162)
 ChangeLogBox.ZIndex = 2
 ChangeLogBox.Image = "rbxassetid://3570695787"
 ChangeLogBox.ImageColor3 = Color3.fromRGB(15, 15, 15)
@@ -360,17 +399,17 @@ ChangeLogBox.ScaleType = Enum.ScaleType.Slice
 ChangeLogBox.SliceCenter = Rect.new(100, 100, 100, 100)
 ChangeLogBox.SliceScale = 0.050
 
-TextLabel_4.Parent = ChangeLogBox
-TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_4.BackgroundTransparency = 1.000
-TextLabel_4.Position = UDim2.new(0.34523809, 0, 0, 0)
-TextLabel_4.Size = UDim2.new(0, 102, 0, 30)
-TextLabel_4.ZIndex = 3
-TextLabel_4.Font = Enum.Font.SourceSans
-TextLabel_4.Text = "Change Log"
-TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_4.TextSize = 24.000
-TextLabel_4.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel_5.Parent = ChangeLogBox
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Position = UDim2.new(0.34523809, 0, 0, 0)
+TextLabel_5.Size = UDim2.new(0, 102, 0, 30)
+TextLabel_5.ZIndex = 3
+TextLabel_5.Font = Enum.Font.SourceSans
+TextLabel_5.Text = "Change Log"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextSize = 24.000
+TextLabel_5.TextXAlignment = Enum.TextXAlignment.Left
 
 ScrollingFrame.Parent = ChangeLogBox
 ScrollingFrame.Active = true
@@ -421,29 +460,29 @@ Frame.ScaleType = Enum.ScaleType.Slice
 Frame.SliceCenter = Rect.new(100, 100, 100, 100)
 Frame.SliceScale = 0.050
 
-TextLabel_5.Parent = Frame
-TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_5.BackgroundTransparency = 1.000
-TextLabel_5.Position = UDim2.new(0.0399999991, 0, 0.125, 0)
-TextLabel_5.Size = UDim2.new(0, 59, 0, 30)
-TextLabel_5.ZIndex = 3
-TextLabel_5.Font = Enum.Font.SourceSans
-TextLabel_5.Text = "Game :"
-TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_5.TextSize = 24.000
-TextLabel_5.TextXAlignment = Enum.TextXAlignment.Left
-
 TextLabel_6.Parent = Frame
 TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_6.BackgroundTransparency = 1.000
-TextLabel_6.Position = UDim2.new(0.353095204, 0, -0.00170595734, 0)
-TextLabel_6.Size = UDim2.new(0, 94, 0, 30)
+TextLabel_6.Position = UDim2.new(0.0399999991, 0, 0.125, 0)
+TextLabel_6.Size = UDim2.new(0, 59, 0, 30)
 TextLabel_6.ZIndex = 3
 TextLabel_6.Font = Enum.Font.SourceSans
-TextLabel_6.Text = "Server Info"
+TextLabel_6.Text = "Game :"
 TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_6.TextSize = 24.000
 TextLabel_6.TextXAlignment = Enum.TextXAlignment.Left
+
+TextLabel_7.Parent = Frame
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.Position = UDim2.new(0.353095204, 0, -0.00170595734, 0)
+TextLabel_7.Size = UDim2.new(0, 94, 0, 30)
+TextLabel_7.ZIndex = 3
+TextLabel_7.Font = Enum.Font.SourceSans
+TextLabel_7.Text = "Server Info"
+TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.TextSize = 24.000
+TextLabel_7.TextXAlignment = Enum.TextXAlignment.Left
 
 GameName.Name = "GameName"
 GameName.Parent = Frame
@@ -458,17 +497,17 @@ GameName.TextColor3 = Color3.fromRGB(255, 255, 255)
 GameName.TextSize = 24.000
 GameName.TextXAlignment = Enum.TextXAlignment.Left
 
-TextLabel_7.Parent = Frame
-TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_7.BackgroundTransparency = 1.000
-TextLabel_7.Position = UDim2.new(0.0399999693, 0, 0.287999958, 0)
-TextLabel_7.Size = UDim2.new(0, 73, 0, 30)
-TextLabel_7.ZIndex = 3
-TextLabel_7.Font = Enum.Font.SourceSans
-TextLabel_7.Text = "Game ID :"
-TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_7.TextSize = 24.000
-TextLabel_7.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel_8.Parent = Frame
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.BackgroundTransparency = 1.000
+TextLabel_8.Position = UDim2.new(0.0399999693, 0, 0.287999958, 0)
+TextLabel_8.Size = UDim2.new(0, 73, 0, 30)
+TextLabel_8.ZIndex = 3
+TextLabel_8.Font = Enum.Font.SourceSans
+TextLabel_8.Text = "Game ID :"
+TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.TextSize = 24.000
+TextLabel_8.TextXAlignment = Enum.TextXAlignment.Left
 
 GameID.Name = "GameID"
 GameID.Parent = Frame
@@ -483,17 +522,17 @@ GameID.TextColor3 = Color3.fromRGB(255, 255, 255)
 GameID.TextSize = 24.000
 GameID.TextXAlignment = Enum.TextXAlignment.Left
 
-TextLabel_8.Parent = Frame
-TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_8.BackgroundTransparency = 1.000
-TextLabel_8.Position = UDim2.new(0.0399999991, 0, 0.60799998, 0)
-TextLabel_8.Size = UDim2.new(0, 100, 0, 30)
-TextLabel_8.ZIndex = 3
-TextLabel_8.Font = Enum.Font.SourceSans
-TextLabel_8.Text = "Playing time :"
-TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_8.TextSize = 24.000
-TextLabel_8.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel_9.Parent = Frame
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.BackgroundTransparency = 1.000
+TextLabel_9.Position = UDim2.new(0.0399999991, 0, 0.60799998, 0)
+TextLabel_9.Size = UDim2.new(0, 100, 0, 30)
+TextLabel_9.ZIndex = 3
+TextLabel_9.Font = Enum.Font.SourceSans
+TextLabel_9.Text = "Playing time :"
+TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.TextSize = 24.000
+TextLabel_9.TextXAlignment = Enum.TextXAlignment.Left
 
 PlayingTime.Name = "PlayingTime"
 PlayingTime.Parent = Frame
@@ -508,17 +547,17 @@ PlayingTime.TextColor3 = Color3.fromRGB(255, 255, 255)
 PlayingTime.TextSize = 24.000
 PlayingTime.TextXAlignment = Enum.TextXAlignment.Left
 
-TextLabel_9.Parent = Frame
-TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_9.BackgroundTransparency = 1.000
-TextLabel_9.Position = UDim2.new(0.0399999991, 0, 0.44600001, 0)
-TextLabel_9.Size = UDim2.new(0, 141, 0, 30)
-TextLabel_9.ZIndex = 3
-TextLabel_9.Font = Enum.Font.SourceSans
-TextLabel_9.Text = "Players in Game :"
-TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_9.TextSize = 24.000
-TextLabel_9.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel_10.Parent = Frame
+TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.BackgroundTransparency = 1.000
+TextLabel_10.Position = UDim2.new(0.0399999991, 0, 0.44600001, 0)
+TextLabel_10.Size = UDim2.new(0, 141, 0, 30)
+TextLabel_10.ZIndex = 3
+TextLabel_10.Font = Enum.Font.SourceSans
+TextLabel_10.Text = "Players in Game :"
+TextLabel_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.TextSize = 24.000
+TextLabel_10.TextXAlignment = Enum.TextXAlignment.Left
 
 igPlayers.Name = "igPlayers"
 igPlayers.Parent = Frame
@@ -533,17 +572,17 @@ igPlayers.TextColor3 = Color3.fromRGB(255, 255, 255)
 igPlayers.TextSize = 24.000
 igPlayers.TextXAlignment = Enum.TextXAlignment.Left
 
-TextLabel_10.Parent = Frame
-TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_10.BackgroundTransparency = 1.000
-TextLabel_10.Position = UDim2.new(0.0399999693, 0, 0.758000076, 0)
-TextLabel_10.Size = UDim2.new(0, 90, 0, 30)
-TextLabel_10.ZIndex = 3
-TextLabel_10.Font = Enum.Font.SourceSans
-TextLabel_10.Text = "Your FPS :"
-TextLabel_10.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_10.TextSize = 24.000
-TextLabel_10.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel_11.Parent = Frame
+TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.BackgroundTransparency = 1.000
+TextLabel_11.Position = UDim2.new(0.0399999693, 0, 0.758000076, 0)
+TextLabel_11.Size = UDim2.new(0, 90, 0, 30)
+TextLabel_11.ZIndex = 3
+TextLabel_11.Font = Enum.Font.SourceSans
+TextLabel_11.Text = "Your FPS :"
+TextLabel_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.TextSize = 24.000
+TextLabel_11.TextXAlignment = Enum.TextXAlignment.Left
 
 PlayerFps.Name = "PlayerFps"
 PlayerFps.Parent = Frame
@@ -585,17 +624,17 @@ Frame_2.ScaleType = Enum.ScaleType.Slice
 Frame_2.SliceCenter = Rect.new(100, 100, 100, 100)
 Frame_2.SliceScale = 0.050
 
-TextLabel_11.Parent = Frame_2
-TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_11.BackgroundTransparency = 1.000
-TextLabel_11.Position = UDim2.new(0.345904768, 0, 0.00100000005, 0)
-TextLabel_11.Size = UDim2.new(0, 107, 0, 22)
-TextLabel_11.ZIndex = 3
-TextLabel_11.Font = Enum.Font.SourceSans
-TextLabel_11.Text = "Music Player"
-TextLabel_11.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_11.TextSize = 24.000
-TextLabel_11.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel_12.Parent = Frame_2
+TextLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_12.BackgroundTransparency = 1.000
+TextLabel_12.Position = UDim2.new(0.345904768, 0, 0.00100000005, 0)
+TextLabel_12.Size = UDim2.new(0, 107, 0, 22)
+TextLabel_12.ZIndex = 3
+TextLabel_12.Font = Enum.Font.SourceSans
+TextLabel_12.Text = "Music Player"
+TextLabel_12.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_12.TextSize = 24.000
+TextLabel_12.TextXAlignment = Enum.TextXAlignment.Left
 
 MusicBox.Name = "MusicBox"
 MusicBox.Parent = Frame_2
@@ -633,17 +672,17 @@ play_arrow.Image = "rbxassetid://3926307971"
 play_arrow.ImageRectOffset = Vector2.new(764, 244)
 play_arrow.ImageRectSize = Vector2.new(36, 36)
 
-TextLabel_12.Parent = Frame_2
-TextLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_12.BackgroundTransparency = 1.000
-TextLabel_12.Position = UDim2.new(0.386000007, 0, 0.284000009, 0)
-TextLabel_12.Size = UDim2.new(0, 66, 0, 22)
-TextLabel_12.ZIndex = 3
-TextLabel_12.Font = Enum.Font.SourceSans
-TextLabel_12.Text = "Play list"
-TextLabel_12.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_12.TextSize = 24.000
-TextLabel_12.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel_13.Parent = Frame_2
+TextLabel_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_13.BackgroundTransparency = 1.000
+TextLabel_13.Position = UDim2.new(0.386000007, 0, 0.284000009, 0)
+TextLabel_13.Size = UDim2.new(0, 66, 0, 22)
+TextLabel_13.ZIndex = 3
+TextLabel_13.Font = Enum.Font.SourceSans
+TextLabel_13.Text = "Play list"
+TextLabel_13.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_13.TextSize = 24.000
+TextLabel_13.TextXAlignment = Enum.TextXAlignment.Left
 
 NowPlayingBox.Name = "NowPlayingBox"
 NowPlayingBox.Parent = Frame_2
@@ -782,8 +821,8 @@ Frame_4.Name = "Frame"
 Frame_4.Parent = Frame_3
 Frame_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Frame_4.BackgroundTransparency = 1.000
-Frame_4.Position = UDim2.new(0.00600000005, 0, 0.00999999978, 0)
-Frame_4.Size = UDim2.new(0, 415, 0, 222)
+Frame_4.Position = UDim2.new(0.00600004662, 0, 0.0934633538, 0)
+Frame_4.Size = UDim2.new(0, 415, 0, 201)
 Frame_4.ZIndex = 3
 Frame_4.Image = "rbxassetid://3570695787"
 Frame_4.ImageColor3 = Color3.fromRGB(20, 20, 20)
@@ -796,9 +835,9 @@ ScrollingFrame_2.Active = true
 ScrollingFrame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ScrollingFrame_2.BackgroundTransparency = 1.000
 ScrollingFrame_2.BorderSizePixel = 0
-ScrollingFrame_2.Size = UDim2.new(0, 413, 0, 220)
+ScrollingFrame_2.Size = UDim2.new(0, 413, 0, 199)
 ScrollingFrame_2.ZIndex = 3
-ScrollingFrame_2.CanvasSize = UDim2.new(25, 0, 25, 0)
+ScrollingFrame_2.CanvasSize = UDim2.new(455, 0, 455, 0)
 ScrollingFrame_2.ScrollBarThickness = 5
 
 EditorFrame.Name = "EditorFrame"
@@ -970,6 +1009,121 @@ ScriptNameBox_2.Text = ""
 ScriptNameBox_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 ScriptNameBox_2.TextSize = 20.000
 
+ScrollingFrame_3.Parent = Frame_3
+ScrollingFrame_3.Active = true
+ScrollingFrame_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame_3.BackgroundTransparency = 1.000
+ScrollingFrame_3.Position = UDim2.new(0.00600004662, 0, 0, 0)
+ScrollingFrame_3.Size = UDim2.new(0, 418, 0, 32)
+ScrollingFrame_3.ZIndex = 3
+ScrollingFrame_3.CanvasSize = UDim2.new(0, 0, 0, 0)
+ScrollingFrame_3.HorizontalScrollBarInset = Enum.ScrollBarInset.ScrollBar
+ScrollingFrame_3.VerticalScrollBarInset = Enum.ScrollBarInset.ScrollBar
+
+MainTab.Name = "!MainTab"
+MainTab.Parent = ScrollingFrame_3
+MainTab.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+MainTab.BackgroundTransparency = 1.000
+MainTab.BorderSizePixel = 0
+MainTab.Size = UDim2.new(0, 44, 0, 20)
+MainTab.ZIndex = 4
+MainTab.Font = Enum.Font.Roboto
+MainTab.Text = "Tab"
+MainTab.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainTab.TextScaled = true
+MainTab.TextSize = 14.000
+MainTab.TextWrapped = true
+
+TextButton_Roundify_5px.Name = "TextButton_Roundify_5px"
+TextButton_Roundify_5px.Parent = MainTab
+TextButton_Roundify_5px.Active = true
+TextButton_Roundify_5px.AnchorPoint = Vector2.new(0.5, 0.5)
+TextButton_Roundify_5px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_Roundify_5px.BackgroundTransparency = 1.000
+TextButton_Roundify_5px.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextButton_Roundify_5px.Selectable = true
+TextButton_Roundify_5px.Size = UDim2.new(1, 0, 1, 0)
+TextButton_Roundify_5px.ZIndex = 3
+TextButton_Roundify_5px.Image = "rbxassetid://3570695787"
+TextButton_Roundify_5px.ImageColor3 = Color3.fromRGB(20, 20, 20)
+TextButton_Roundify_5px.ScaleType = Enum.ScaleType.Slice
+TextButton_Roundify_5px.SliceCenter = Rect.new(100, 100, 100, 100)
+TextButton_Roundify_5px.SliceScale = 0.050
+
+UIListLayout.Parent = ScrollingFrame_3
+UIListLayout.FillDirection = Enum.FillDirection.Horizontal
+UIListLayout.Padding = UDim.new(0, 3)
+
+TemplateTab.Name = "TemplateTab"
+TemplateTab.Parent = ScrollingFrame_3
+TemplateTab.Active = true
+TemplateTab.AnchorPoint = Vector2.new(0.5, 0.5)
+TemplateTab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TemplateTab.BackgroundTransparency = 1.000
+TemplateTab.Position = UDim2.new(0.5, 0, 0.5, 0)
+TemplateTab.Selectable = true
+TemplateTab.Size = UDim2.new(0, 63, 0, 20)
+TemplateTab.Visible = false
+TemplateTab.ZIndex = 3
+TemplateTab.Image = "rbxassetid://3570695787"
+TemplateTab.ImageColor3 = Color3.fromRGB(20, 20, 20)
+TemplateTab.ScaleType = Enum.ScaleType.Slice
+TemplateTab.SliceCenter = Rect.new(100, 100, 100, 100)
+TemplateTab.SliceScale = 0.050
+
+Tab.Name = "Tab"
+Tab.Parent = TemplateTab
+Tab.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Tab.BackgroundTransparency = 1.000
+Tab.BorderSizePixel = 0
+Tab.Position = UDim2.new(0.112440318, 0, 0, 0)
+Tab.Size = UDim2.new(0, 35, 0, 20)
+Tab.ZIndex = 4
+Tab.Font = Enum.Font.Roboto
+Tab.Text = "Tab 1"
+Tab.TextColor3 = Color3.fromRGB(255, 255, 255)
+Tab.TextScaled = true
+Tab.TextSize = 14.000
+Tab.TextWrapped = true
+
+CloseTabBtn.Name = "CloseTabBtn"
+CloseTabBtn.Parent = TemplateTab
+CloseTabBtn.BackgroundTransparency = 1.000
+CloseTabBtn.LayoutOrder = 5
+CloseTabBtn.Position = UDim2.new(0.711904764, 0, 0.075000003, 0)
+CloseTabBtn.Size = UDim2.new(0, 18, 0, 18)
+CloseTabBtn.ZIndex = 4
+CloseTabBtn.Image = "rbxassetid://3926305904"
+CloseTabBtn.ImageRectOffset = Vector2.new(924, 724)
+CloseTabBtn.ImageRectSize = Vector2.new(36, 36)
+
+zAddTabBtn.Name = "zAddTabBtn"
+zAddTabBtn.Parent = ScrollingFrame_3
+zAddTabBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+zAddTabBtn.BackgroundTransparency = 1.000
+zAddTabBtn.Size = UDim2.new(0, 20, 0, 20)
+zAddTabBtn.ZIndex = 3
+zAddTabBtn.Font = Enum.Font.Fantasy
+zAddTabBtn.Text = "+"
+zAddTabBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+zAddTabBtn.TextSize = 34.000
+zAddTabBtn.TextWrapped = true
+
+TextLabel_14.Parent = Frame_3
+TextLabel_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_14.BackgroundTransparency = 1.000
+TextLabel_14.Position = UDim2.new(0.116666667, 0, 0.924000084, 0)
+TextLabel_14.Size = UDim2.new(0, 125, 0, 22)
+TextLabel_14.Visible = false
+TextLabel_14.ZIndex = 3
+TextLabel_14.Font = Enum.Font.SourceSans
+TextLabel_14.Text = "Current Tab is:"
+TextLabel_14.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_14.TextScaled = true
+TextLabel_14.TextSize = 14.000
+TextLabel_14.TextWrapped = true
+TextLabel_14.TextXAlignment = Enum.TextXAlignment.Left
+
 SettingsTab.Name = "SettingsTab"
 SettingsTab.Parent = TabsFrame
 SettingsTab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -997,17 +1151,17 @@ Frame_5.ScaleType = Enum.ScaleType.Slice
 Frame_5.SliceCenter = Rect.new(100, 100, 100, 100)
 Frame_5.SliceScale = 0.050
 
-TextLabel_13.Parent = Frame_5
-TextLabel_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_13.BackgroundTransparency = 1.000
-TextLabel_13.Position = UDim2.new(0.391095251, 0, 0.00204856973, 0)
-TextLabel_13.Size = UDim2.new(0, 70, 0, 30)
-TextLabel_13.ZIndex = 3
-TextLabel_13.Font = Enum.Font.SourceSans
-TextLabel_13.Text = "Settings"
-TextLabel_13.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_13.TextSize = 24.000
-TextLabel_13.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel_15.Parent = Frame_5
+TextLabel_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_15.BackgroundTransparency = 1.000
+TextLabel_15.Position = UDim2.new(0.391095251, 0, 0.00204856973, 0)
+TextLabel_15.Size = UDim2.new(0, 70, 0, 30)
+TextLabel_15.ZIndex = 3
+TextLabel_15.Font = Enum.Font.SourceSans
+TextLabel_15.Text = "Settings"
+TextLabel_15.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_15.TextSize = 24.000
+TextLabel_15.TextXAlignment = Enum.TextXAlignment.Left
 
 AutoR6Toggle.Name = "AutoR6Toggle"
 AutoR6Toggle.Parent = Frame_5
@@ -1045,17 +1199,17 @@ Circle.ScaleType = Enum.ScaleType.Slice
 Circle.SliceCenter = Rect.new(100, 100, 100, 100)
 Circle.SliceScale = 0.120
 
-TextLabel_14.Parent = Frame_5
-TextLabel_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_14.BackgroundTransparency = 1.000
-TextLabel_14.Position = UDim2.new(0.0399999991, 0, 0.282999992, 0)
-TextLabel_14.Size = UDim2.new(0, 68, 0, 22)
-TextLabel_14.ZIndex = 3
-TextLabel_14.Font = Enum.Font.SourceSans
-TextLabel_14.Text = "Auto R6"
-TextLabel_14.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_14.TextSize = 24.000
-TextLabel_14.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel_16.Parent = Frame_5
+TextLabel_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_16.BackgroundTransparency = 1.000
+TextLabel_16.Position = UDim2.new(0.0399999991, 0, 0.282999992, 0)
+TextLabel_16.Size = UDim2.new(0, 68, 0, 22)
+TextLabel_16.ZIndex = 3
+TextLabel_16.Font = Enum.Font.SourceSans
+TextLabel_16.Text = "Auto R6"
+TextLabel_16.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_16.TextSize = 24.000
+TextLabel_16.TextXAlignment = Enum.TextXAlignment.Left
 
 ExecutetionTybe.Name = "ExecutetionTybe"
 ExecutetionTybe.Parent = Frame_5
@@ -1133,17 +1287,17 @@ Frame_6.ScaleType = Enum.ScaleType.Slice
 Frame_6.SliceCenter = Rect.new(100, 100, 100, 100)
 Frame_6.SliceScale = 0.050
 
-TextLabel_15.Parent = Frame_6
-TextLabel_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_15.BackgroundTransparency = 1.000
-TextLabel_15.Position = UDim2.new(0.164999977, 0, 0.0700000003, 0)
-TextLabel_15.Size = UDim2.new(0, 330, 0, 30)
-TextLabel_15.ZIndex = 3
-TextLabel_15.Font = Enum.Font.SourceSans
-TextLabel_15.Text = "Scripts and UI by FoxXtreme"
-TextLabel_15.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_15.TextSize = 24.000
-TextLabel_15.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel_17.Parent = Frame_6
+TextLabel_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_17.BackgroundTransparency = 1.000
+TextLabel_17.Position = UDim2.new(0.164999977, 0, 0.0700000003, 0)
+TextLabel_17.Size = UDim2.new(0, 330, 0, 30)
+TextLabel_17.ZIndex = 3
+TextLabel_17.Font = Enum.Font.SourceSans
+TextLabel_17.Text = "Scripts and UI by FoxXtreme"
+TextLabel_17.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_17.TextSize = 24.000
+TextLabel_17.TextXAlignment = Enum.TextXAlignment.Left
 
 Logo_3.Name = "Logo"
 Logo_3.Parent = Frame_6
@@ -1181,15 +1335,15 @@ SvLink.TextXAlignment = Enum.TextXAlignment.Left
 
 -- Scripts:
 
-local function TCKDPSP_fake_script() -- HideButton.LocalScript 
+local function RVOZ_fake_script() -- HideButton.LocalScript 
 	local script = Instance.new('LocalScript', HideButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(TCKDPSP_fake_script)()
-local function LDDABQY_fake_script() -- Home.LocalScript 
+coroutine.wrap(RVOZ_fake_script)()
+local function RQGO_fake_script() -- Home.LocalScript 
 	local script = Instance.new('LocalScript', Home)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1201,8 +1355,8 @@ local function LDDABQY_fake_script() -- Home.LocalScript
 		script.Parent.Parent.Parent.Parent.TabsFrame.ServerTab.Visible = false
 	end)
 end
-coroutine.wrap(LDDABQY_fake_script)()
-local function ROYB_fake_script() -- ExecTabButton.LocalScript 
+coroutine.wrap(RQGO_fake_script)()
+local function VAHDEK_fake_script() -- ExecTabButton.LocalScript 
 	local script = Instance.new('LocalScript', ExecTabButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1214,8 +1368,8 @@ local function ROYB_fake_script() -- ExecTabButton.LocalScript
 		script.Parent.Parent.Parent.Parent.TabsFrame.ServerTab.Visible = false
 	end)
 end
-coroutine.wrap(ROYB_fake_script)()
-local function XZTKAAM_fake_script() -- Settings.LocalScript 
+coroutine.wrap(VAHDEK_fake_script)()
+local function WNOHWG_fake_script() -- Settings.LocalScript 
 	local script = Instance.new('LocalScript', Settings)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1227,8 +1381,8 @@ local function XZTKAAM_fake_script() -- Settings.LocalScript
 		script.Parent.Parent.Parent.Parent.TabsFrame.ServerTab.Visible = false
 	end)
 end
-coroutine.wrap(XZTKAAM_fake_script)()
-local function GOKRL_fake_script() -- MusicPlyrTabButton.LocalScript 
+coroutine.wrap(WNOHWG_fake_script)()
+local function LGOPA_fake_script() -- MusicPlyrTabButton.LocalScript 
 	local script = Instance.new('LocalScript', MusicPlyrTabButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1240,8 +1394,8 @@ local function GOKRL_fake_script() -- MusicPlyrTabButton.LocalScript
 		script.Parent.Parent.Parent.Parent.TabsFrame.ServerTab.Visible = false
 	end)
 end
-coroutine.wrap(GOKRL_fake_script)()
-local function BSKGZD_fake_script() -- CreditsTabButton.LocalScript 
+coroutine.wrap(LGOPA_fake_script)()
+local function LSCKON_fake_script() -- CreditsTabButton.LocalScript 
 	local script = Instance.new('LocalScript', CreditsTabButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1253,8 +1407,8 @@ local function BSKGZD_fake_script() -- CreditsTabButton.LocalScript
 		script.Parent.Parent.Parent.Parent.TabsFrame.ServerTab.Visible = false
 	end)
 end
-coroutine.wrap(BSKGZD_fake_script)()
-local function YXAP_fake_script() -- ServerTabButton.LocalScript 
+coroutine.wrap(LSCKON_fake_script)()
+local function LSXLUFA_fake_script() -- ServerTabButton.LocalScript 
 	local script = Instance.new('LocalScript', ServerTabButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1266,8 +1420,8 @@ local function YXAP_fake_script() -- ServerTabButton.LocalScript
 		script.Parent.Parent.Parent.Parent.TabsFrame.ServerTab.Visible = true
 	end)
 end
-coroutine.wrap(YXAP_fake_script)()
-local function GDQAD_fake_script() -- Logo_2.LocalScript 
+coroutine.wrap(LSXLUFA_fake_script)()
+local function TEGSE_fake_script() -- Logo_2.LocalScript 
 	local script = Instance.new('LocalScript', Logo_2)
 
 	local Players = game:GetService("Players")
@@ -1285,8 +1439,8 @@ local function GDQAD_fake_script() -- Logo_2.LocalScript
 	imageLabel.Image = content
 	imageLabel.Size = UDim2.new(0,  65, 0,  65)
 end
-coroutine.wrap(GDQAD_fake_script)()
-local function VZUSHC_fake_script() -- PlayerName.LocalScript 
+coroutine.wrap(TEGSE_fake_script)()
+local function ANXNDS_fake_script() -- PlayerName.LocalScript 
 	local script = Instance.new('LocalScript', PlayerName)
 
 	local ok = script.Parent.Parent.PlayerName
@@ -1295,23 +1449,32 @@ local function VZUSHC_fake_script() -- PlayerName.LocalScript
 	
 	ok.Text = player.DisplayName
 end
-coroutine.wrap(VZUSHC_fake_script)()
-local function WSOKKF_fake_script() -- IcebergStatus.LocalScript 
-	local script = Instance.new('LocalScript', IcebergStatus)
+coroutine.wrap(ANXNDS_fake_script)()
+local function SYIFUL_fake_script() -- IcebergBootStrapperStatus.LocalScript 
+	local script = Instance.new('LocalScript', IcebergBootStrapperStatus)
 
-	local ok = script.Parent.Parent.IcebergStatus
+	local ok = script.Parent.Parent.IcebergBootStrapperStatus
 	local version = game:HttpGet("https://raw.githubusercontent.com/XtremeSploit/Iceberg/main/Version")
 	
 	ok.Text = version
 end
-coroutine.wrap(WSOKKF_fake_script)()
-local function NECHGZ_fake_script() -- ChangeLog.LocalScript 
+coroutine.wrap(SYIFUL_fake_script)()
+local function MEVE_fake_script() -- IcebergUIStatus.LocalScript 
+	local script = Instance.new('LocalScript', IcebergUIStatus)
+
+	local ok = script.Parent.Parent.IcebergUIStatus
+	local version = game:HttpGet("https://raw.githubusercontent.com/XtremeSploit/Iceberg/main/UI%20Version")
+	
+	ok.Text = version
+end
+coroutine.wrap(MEVE_fake_script)()
+local function IZJXQM_fake_script() -- ChangeLog.LocalScript 
 	local script = Instance.new('LocalScript', ChangeLog)
 
 	script.Parent.Text = game:HttpGet("https://raw.githubusercontent.com/XtremeSploit/Iceberg/main/Change%20Logs")
 end
-coroutine.wrap(NECHGZ_fake_script)()
-local function YVGDN_fake_script() -- GameName.LocalScript 
+coroutine.wrap(IZJXQM_fake_script)()
+local function UTWUVO_fake_script() -- GameName.LocalScript 
 	local script = Instance.new('LocalScript', GameName)
 
 	local PlaceId = game.PlaceId
@@ -1323,8 +1486,8 @@ local function YVGDN_fake_script() -- GameName.LocalScript
 		ok.Text = info.Name
 	end
 end
-coroutine.wrap(YVGDN_fake_script)()
-local function DIORWB_fake_script() -- GameID.LocalScript 
+coroutine.wrap(UTWUVO_fake_script)()
+local function VLZPQ_fake_script() -- GameID.LocalScript 
 	local script = Instance.new('LocalScript', GameID)
 
 	local PlaceId = game.PlaceId
@@ -1332,8 +1495,8 @@ local function DIORWB_fake_script() -- GameID.LocalScript
 	
 	ok.Text = PlaceId
 end
-coroutine.wrap(DIORWB_fake_script)()
-local function IHQRW_fake_script() -- PlayingTime.LocalScript 
+coroutine.wrap(VLZPQ_fake_script)()
+local function EYICQN_fake_script() -- PlayingTime.LocalScript 
 	local script = Instance.new('LocalScript', PlayingTime)
 
 	-- the script just shows the time that u were in server, not the acuall server age
@@ -1359,8 +1522,8 @@ local function IHQRW_fake_script() -- PlayingTime.LocalScript
 	
 	
 end
-coroutine.wrap(IHQRW_fake_script)()
-local function PKCCPVN_fake_script() -- igPlayers.LocalScript 
+coroutine.wrap(EYICQN_fake_script)()
+local function YMZXLVD_fake_script() -- igPlayers.LocalScript 
 	local script = Instance.new('LocalScript', igPlayers)
 
 	local Players = game:GetService("Players")
@@ -1381,8 +1544,8 @@ local function PKCCPVN_fake_script() -- igPlayers.LocalScript
 	end
 	
 end
-coroutine.wrap(PKCCPVN_fake_script)()
-local function JRRF_fake_script() -- PlayerFps.LocalScript 
+coroutine.wrap(YMZXLVD_fake_script)()
+local function XIDLX_fake_script() -- PlayerFps.LocalScript 
 	local script = Instance.new('LocalScript', PlayerFps)
 
 	local RunService = game:GetService("RunService")
@@ -1406,8 +1569,8 @@ local function JRRF_fake_script() -- PlayerFps.LocalScript
 	Start = TimeFunction()
 	RunService.Heartbeat:Connect(HeartbeatUpdate)
 end
-coroutine.wrap(JRRF_fake_script)()
-local function XFOXTRW_fake_script() -- Executebtn.Functioning 
+coroutine.wrap(XIDLX_fake_script)()
+local function BECEGH_fake_script() -- Executebtn.Functioning 
 	local script = Instance.new('LocalScript', Executebtn)
 
 	local textEditor = script.Parent.Parent.Frame.ScrollingFrame.EditorFrame.Source
@@ -1415,8 +1578,8 @@ local function XFOXTRW_fake_script() -- Executebtn.Functioning
 		loadstring(textEditor.Text)()
 	end)
 end
-coroutine.wrap(XFOXTRW_fake_script)()
-local function YHDZ_fake_script() -- delete.LocalScript 
+coroutine.wrap(BECEGH_fake_script)()
+local function SYEVNE_fake_script() -- delete.LocalScript 
 	local script = Instance.new('LocalScript', delete)
 
 	local txt = script.Parent.Parent.Frame.ScrollingFrame.EditorFrame.Source
@@ -1424,8 +1587,8 @@ local function YHDZ_fake_script() -- delete.LocalScript
 		txt.Text = ""
 	end)
 end
-coroutine.wrap(YHDZ_fake_script)()
-local function DGIB_fake_script() -- ScrollingFrame_2.LocalScript 
+coroutine.wrap(SYEVNE_fake_script)()
+local function YOSLVX_fake_script() -- ScrollingFrame_2.LocalScript 
 	local script = Instance.new('LocalScript', ScrollingFrame_2)
 
 	-- falsepikawoods
@@ -1611,8 +1774,8 @@ local function DGIB_fake_script() -- ScrollingFrame_2.LocalScript
 	
 	
 end
-coroutine.wrap(DGIB_fake_script)()
-local function ZEZLB_fake_script() -- saveScripts.LocalScript 
+coroutine.wrap(YOSLVX_fake_script)()
+local function RLMN_fake_script() -- saveScripts.LocalScript 
 	local script = Instance.new('LocalScript', saveScripts)
 
 	local textEditor = script.Parent.Parent.Frame.ScrollingFrame.EditorFrame.Source
@@ -1627,8 +1790,172 @@ local function ZEZLB_fake_script() -- saveScripts.LocalScript
 	end)
 	
 end
-coroutine.wrap(ZEZLB_fake_script)()
-local function RIUFDRD_fake_script() -- AutoR6Toggle.Script 
+coroutine.wrap(RLMN_fake_script)()
+local function DDNI_fake_script() -- MainTab.LocalScript 
+	local script = Instance.new('LocalScript', MainTab)
+
+	local textEditor = script.Parent.Parent.Parent.Frame.ScrollingFrame.EditorFrame.Source
+	local tabName = script.Parent.Name
+	_G.tab = tostring(tabName)
+	_G.FirstTime =true
+	local tabText1 = ""
+	while _G.FirstTime == true do
+		tabText1 = tostring(textEditor.Text)
+		wait()
+	end
+	script.Parent.MouseButton1Click:Connect(function()
+		_G.FirstTime = false
+		_G.tab = tostring(tabName)
+		textEditor.Text = tabText1
+		while _G.tab == tabName do
+			tabText1 = tostring(textEditor.Text)
+			wait()
+		end
+	end)
+end
+coroutine.wrap(DDNI_fake_script)()
+local function PRUGJKU_fake_script() -- Tab.LocalScript 
+	local script = Instance.new('LocalScript', Tab)
+
+	local textEditor = script.Parent.Parent.Parent.Parent.Frame.ScrollingFrame.EditorFrame.Source
+	local tabName = script.Parent.Parent.Name
+	local tabText0 = ""
+	script.Parent.MouseButton1Click:Connect(function()
+		_G.tab = tostring(tabName)
+		_G.FirstTime = false
+		textEditor.Text = tabText0
+		while _G.tab == tabName do
+			tabText0 = tostring(textEditor.Text)
+			wait()
+		end
+	end)
+end
+coroutine.wrap(PRUGJKU_fake_script)()
+local function LUFHYO_fake_script() -- CloseTabBtn.LocalScript 
+	local script = Instance.new('LocalScript', CloseTabBtn)
+
+	local tab = script.Parent.Parent
+	script.Parent.MouseButton1Click:Connect(function()
+		_G.i -= 1
+		tab:Destroy()
+	end)
+end
+coroutine.wrap(LUFHYO_fake_script)()
+local function QZNSO_fake_script() -- zAddTabBtn.LocalScript 
+	local script = Instance.new('LocalScript', zAddTabBtn)
+
+	_G.tabNum = -1
+	_G.i = -1
+	
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		_G.i += 1
+		_G.tabNum += 1
+		local TemplateTab = Instance.new("ImageLabel")
+		local Tab = Instance.new("TextButton")
+		local CloseTabBtn = Instance.new("ImageButton")
+	
+	
+		TemplateTab.Name = "tab".._G.tabNum+1
+		TemplateTab.Parent = ScrollingFrame_3
+		TemplateTab.Active = true
+		TemplateTab.AnchorPoint = Vector2.new(0.5, 0.5)
+		TemplateTab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TemplateTab.BackgroundTransparency = 1.000
+		TemplateTab.Position = UDim2.new(0.5, 0, 0.5, 0)
+		TemplateTab.Selectable = true
+		TemplateTab.Size = UDim2.new(0, 63, 0, 20)
+		TemplateTab.Visible = true
+		TemplateTab.ZIndex = 3
+		TemplateTab.Image = "rbxassetid://3570695787"
+		TemplateTab.ImageColor3 = Color3.fromRGB(20, 20, 20)
+		TemplateTab.ScaleType = Enum.ScaleType.Slice
+		TemplateTab.SliceCenter = Rect.new(100, 100, 100, 100)
+		TemplateTab.SliceScale = 0.050
+	
+		Tab.Name = "Tab"
+		Tab.Parent = TemplateTab
+		Tab.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+		Tab.BackgroundTransparency = 1.000
+		Tab.BorderSizePixel = 0
+		Tab.Position = UDim2.new(0.112440318, 0, 0, 0)
+		Tab.Size = UDim2.new(0, 35, 0, 20)
+		Tab.ZIndex = 4
+		Tab.Font = Enum.Font.Roboto
+		Tab.Text = "Tab".._G.i+1
+		Tab.TextColor3 = Color3.fromRGB(255, 255, 255)
+		Tab.TextScaled = true
+		Tab.TextSize = 14.000
+		Tab.TextWrapped = true
+	
+		--Tab Script
+		local function ZCUMN_fake_script() -- Tab.LocalScript 
+			local script = Instance.new('LocalScript', Tab)
+	
+			local textEditor = script.Parent.Parent.Parent.Parent.Frame.ScrollingFrame.EditorFrame.Source
+			local tabName = script.Parent.Parent.Name
+			local tabText0 = ""
+			script.Parent.MouseButton1Click:Connect(function()
+				_G.tab = tostring(tabName)
+				_G.FirstTime = false
+				textEditor.Text = tabText0
+				while _G.tab == tabName do
+					tabText0 = tostring(textEditor.Text)
+					wait()
+				end
+			end)
+		end
+		coroutine.wrap(ZCUMN_fake_script)()
+	
+	
+	
+	
+		CloseTabBtn.Name = "CloseTabBtn"
+		CloseTabBtn.Parent = TemplateTab
+		CloseTabBtn.BackgroundTransparency = 1.000
+		CloseTabBtn.LayoutOrder = 5
+		CloseTabBtn.Position = UDim2.new(0.711904764, 0, 0.075000003, 0)
+		CloseTabBtn.Size = UDim2.new(0, 18, 0, 18)
+		CloseTabBtn.ZIndex = 4
+		CloseTabBtn.Image = "rbxassetid://3926305904"
+		CloseTabBtn.ImageRectOffset = Vector2.new(924, 724)
+		CloseTabBtn.ImageRectSize = Vector2.new(36, 36)
+	
+		--Close Tab btn
+		local function AQKJ_fake_script() -- CloseTabBtn.LocalScript 
+			local script = Instance.new('LocalScript', CloseTabBtn)
+	
+			local tab = script.Parent.Parent
+			script.Parent.MouseButton1Click:Connect(function()
+				_G.i -= 1
+				tab:Destroy()
+			end)
+		end
+		coroutine.wrap(AQKJ_fake_script)()
+	end)
+end
+coroutine.wrap(QZNSO_fake_script)()
+local function ZQLYRX_fake_script() -- ScrollingFrame_3.LocalScript 
+	local script = Instance.new('LocalScript', ScrollingFrame_3)
+
+	local ScrollingFrame = script.Parent
+	ScrollingFrame.ChildAdded:Connect(function()
+		local ContentSize = ScrollingFrame.UIListLayout.AbsoluteContentSize.Y
+		--ScrollingFrame.CanvasSize = UDim2.fromOffset(0, ContentSize)
+		ScrollingFrame.CanvasPosition = Vector2.new(0, ContentSize)
+	end)
+end
+coroutine.wrap(ZQLYRX_fake_script)()
+local function ZLRHWPG_fake_script() -- TextLabel_14.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_14)
+
+	while true do
+		wait(1)
+		script.Parent.Text = "Current Tab is: ".._G.tab
+	end
+end
+coroutine.wrap(ZLRHWPG_fake_script)()
+local function YPWXI_fake_script() -- AutoR6Toggle.Script 
 	local script = Instance.new('LocalScript', AutoR6Toggle)
 
 	local toggled = false -- The start state of the toggle
@@ -1654,9 +1981,9 @@ local function RIUFDRD_fake_script() -- AutoR6Toggle.Script
 		end
 	end)
 end
-coroutine.wrap(RIUFDRD_fake_script)()
+coroutine.wrap(YPWXI_fake_script)()
 -- AutoR6Toggle.R6OnOff is disabled.
-local function SEIL_fake_script() -- SwithcerToggle.Script 
+local function EUTU_fake_script() -- SwithcerToggle.Script 
 	local script = Instance.new('LocalScript', SwithcerToggle)
 
 	local toggled = false -- The start state of the toggle
@@ -1685,12 +2012,13 @@ local function SEIL_fake_script() -- SwithcerToggle.Script
 		end
 	end)
 end
-coroutine.wrap(SEIL_fake_script)()
-local function NIGHL_fake_script() -- ServerBtn.LocalScript 
+coroutine.wrap(EUTU_fake_script)()
+local function DROR_fake_script() -- ServerBtn.LocalScript 
 	local script = Instance.new('LocalScript', ServerBtn)
 
+	local a = "https://raw.githubusercontent.com/XtremeSploit/Iceberg/main/Discord%20Server%20Link"
 	script.Parent.MouseButton1Click:Connect(function()
-		setclipboard(game:HttpGet("https://raw.githubusercontent.com/XtremeSploit/Iceberg/main/Discord%20Server%20Link"))
+		setclipboard(game:HttpGet(a))
 	
 		script.Parent.Parent.SvLink.Visible = true
 		wait(3)
@@ -1698,8 +2026,8 @@ local function NIGHL_fake_script() -- ServerBtn.LocalScript
 	end)
 	
 end
-coroutine.wrap(NIGHL_fake_script)()
-local function QZHUXZC_fake_script() -- MainFrame.Hide/Unhide 
+coroutine.wrap(DROR_fake_script)()
+local function GXKVBDL_fake_script() -- MainFrame.Hide/Unhide 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	local userinput = game:GetService("UserInputService")
@@ -1712,8 +2040,8 @@ local function QZHUXZC_fake_script() -- MainFrame.Hide/Unhide
 		end
 	end)
 end
-coroutine.wrap(QZHUXZC_fake_script)()
-local function HYCX_fake_script() -- MainFrame.Dragify 
+coroutine.wrap(GXKVBDL_fake_script)()
+local function GZQGSVG_fake_script() -- MainFrame.Dragify 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	-- Dragify
@@ -1756,8 +2084,8 @@ local function HYCX_fake_script() -- MainFrame.Dragify
 	
 	dragify(script.Parent)
 end
-coroutine.wrap(HYCX_fake_script)()
-local function IVZDF_fake_script() -- MainFrame.LodingAnimetion 
+coroutine.wrap(GZQGSVG_fake_script)()
+local function GEDFB_fake_script() -- MainFrame.LodingAnimetion 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	local blur = Instance.new("BlurEffect", game.Lighting)
@@ -1790,4 +2118,4 @@ local function IVZDF_fake_script() -- MainFrame.LodingAnimetion
 	wait()
 	script.Parent.Visible = true
 end
-coroutine.wrap(IVZDF_fake_script)()
+coroutine.wrap(GEDFB_fake_script)()
