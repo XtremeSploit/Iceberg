@@ -122,7 +122,8 @@ MainFrame.Image = "rbxassetid://3570695787"
 MainFrame.ImageColor3 = Color3.fromRGB(10, 10, 10)
 MainFrame.ScaleType = Enum.ScaleType.Slice
 MainFrame.SliceCenter = Rect.new(100, 100, 100, 100)
-MainFrame.SliceScale = 0.050
+MainFrame.Visible = false
+MainFrame.Visible = false
 
 Panel.Name = "Panel"
 Panel.Parent = MainFrame
