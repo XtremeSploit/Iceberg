@@ -1,4 +1,7 @@
 UI Changes
-  [+] Added Tabs in Executer tab
-  [-] the Scrolling frame is broken so the tabs 
-      will be limited to 7 tabs
+  [+] Added Scripts folder tab
+  now you can use you own scripts
+  [-] the scrolling bars bug still
+  there and the scrolling bar in the 
+  scripts folder tab isnt functional
+  I will fix both tomorrow
