@@ -18,6 +18,7 @@ local MusicPlyrTabButton = Instance.new("ImageButton")
 local CreditsTabButton = Instance.new("ImageButton")
 local TextLabel = Instance.new("TextLabel")
 local ServerTabButton = Instance.new("ImageButton")
+local ScriptsList = Instance.new("ImageButton")
 local TabsFrame = Instance.new("Frame")
 local HomeTab = Instance.new("ImageLabel")
 local WelcomeBox = Instance.new("ImageLabel")
@@ -105,6 +106,12 @@ local TextLabel_17 = Instance.new("TextLabel")
 local Logo_3 = Instance.new("ImageLabel")
 local ServerBtn = Instance.new("ImageButton")
 local SvLink = Instance.new("TextLabel")
+local ScriptsListTab = Instance.new("ImageLabel")
+local ScriptsListFrame = Instance.new("ImageLabel")
+local TextLabel_18 = Instance.new("TextLabel")
+local ScrollingFrame_4 = Instance.new("ScrollingFrame")
+local UIListLayout_2 = Instance.new("UIListLayout")
+local refresh = Instance.new("ImageButton")
 
 --Properties:
 
@@ -197,7 +204,7 @@ Home.ImageRectSize = Vector2.new(36, 36)
 ExecTabButton.Name = "ExecTabButton"
 ExecTabButton.Parent = Tabs
 ExecTabButton.BackgroundTransparency = 1.000
-ExecTabButton.Position = UDim2.new(0, 0, 0.114624508, 0)
+ExecTabButton.Position = UDim2.new(0, 0, 0.0983643457, 0)
 ExecTabButton.Size = UDim2.new(0, 25, 0, 25)
 ExecTabButton.ZIndex = 2
 ExecTabButton.Image = "rbxassetid://3926305904"
@@ -207,7 +214,7 @@ ExecTabButton.ImageRectSize = Vector2.new(36, 36)
 Settings.Name = "Settings"
 Settings.Parent = Tabs
 Settings.BackgroundTransparency = 1.000
-Settings.Position = UDim2.new(0, 0, 0.325983733, 0)
+Settings.Position = UDim2.new(0, 0, 0.537365854, 0)
 Settings.Size = UDim2.new(0, 25, 0, 25)
 Settings.Visible = false
 Settings.ZIndex = 2
@@ -231,7 +238,7 @@ CreditsTabButton.Name = "CreditsTabButton"
 CreditsTabButton.Parent = Tabs
 CreditsTabButton.BackgroundTransparency = 1.000
 CreditsTabButton.LayoutOrder = 6
-CreditsTabButton.Position = UDim2.new(0, 0, 0.325379968, 0)
+CreditsTabButton.Position = UDim2.new(0, 0, 0.394485712, 0)
 CreditsTabButton.Size = UDim2.new(0, 25, 0, 25)
 CreditsTabButton.ZIndex = 2
 CreditsTabButton.Image = "rbxassetid://3926307971"
@@ -252,12 +259,22 @@ ServerTabButton.Name = "ServerTabButton"
 ServerTabButton.Parent = Tabs
 ServerTabButton.BackgroundTransparency = 1.000
 ServerTabButton.LayoutOrder = 5
-ServerTabButton.Position = UDim2.new(0, 0, 0.213904679, 0)
+ServerTabButton.Position = UDim2.new(0, 0, 0.295205474, 0)
 ServerTabButton.Size = UDim2.new(0, 25, 0, 25)
 ServerTabButton.ZIndex = 2
 ServerTabButton.Image = "rbxassetid://3926305904"
 ServerTabButton.ImageRectOffset = Vector2.new(284, 684)
 ServerTabButton.ImageRectSize = Vector2.new(36, 36)
+
+ScriptsList.Name = "ScriptsList"
+ScriptsList.Parent = Tabs
+ScriptsList.BackgroundTransparency = 1.000
+ScriptsList.Position = UDim2.new(0, 0, 0.191739842, 0)
+ScriptsList.Size = UDim2.new(0, 25, 0, 25)
+ScriptsList.ZIndex = 2
+ScriptsList.Image = "rbxassetid://3926305904"
+ScriptsList.ImageRectOffset = Vector2.new(804, 44)
+ScriptsList.ImageRectSize = Vector2.new(36, 36)
 
 TabsFrame.Name = "TabsFrame"
 TabsFrame.Parent = MainFrame
@@ -417,8 +434,8 @@ ScrollingFrame.Active = true
 ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ScrollingFrame.BackgroundTransparency = 1.000
 ScrollingFrame.ScrollBarImageTransparency = 1.000
-ScrollingFrame.Position = UDim2.new(0.0257142559, 0, 0.170999989, 0)
-ScrollingFrame.Size = UDim2.new(0, 398, 0, 140)
+ScrollingFrame.Position = UDim2.new(0.0257142559, 0, 0.170999974, 0)
+ScrollingFrame.Size = UDim2.new(0, 421, 0, 140)
 ScrollingFrame.ZIndex = 3
 
 ChangeLog.Name = "ChangeLog"
@@ -1334,17 +1351,79 @@ SvLink.TextColor3 = Color3.fromRGB(255, 255, 255)
 SvLink.TextSize = 24.000
 SvLink.TextXAlignment = Enum.TextXAlignment.Left
 
+ScriptsListTab.Name = "ScriptsListTab"
+ScriptsListTab.Parent = TabsFrame
+ScriptsListTab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScriptsListTab.BackgroundTransparency = 1.000
+ScriptsListTab.Position = UDim2.new(-0.0076501146, 0, -0.00162471086, 0)
+ScriptsListTab.Size = UDim2.new(0, 423, 0, 251)
+ScriptsListTab.Visible = false
+ScriptsListTab.Image = "rbxassetid://3570695787"
+ScriptsListTab.ImageColor3 = Color3.fromRGB(10, 10, 10)
+ScriptsListTab.ScaleType = Enum.ScaleType.Slice
+ScriptsListTab.SliceCenter = Rect.new(100, 100, 100, 100)
+ScriptsListTab.SliceScale = 0.050
+
+ScriptsListFrame.Name = "ScriptsListFrame"
+ScriptsListFrame.Parent = ScriptsListTab
+ScriptsListFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScriptsListFrame.BackgroundTransparency = 1.000
+ScriptsListFrame.Position = UDim2.new(0.00800007861, 0, 0.0073219086, 0)
+ScriptsListFrame.Size = UDim2.new(0, 420, 0, 246)
+ScriptsListFrame.ZIndex = 2
+ScriptsListFrame.Image = "rbxassetid://3570695787"
+ScriptsListFrame.ImageColor3 = Color3.fromRGB(15, 15, 15)
+ScriptsListFrame.ScaleType = Enum.ScaleType.Slice
+ScriptsListFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+ScriptsListFrame.SliceScale = 0.050
+
+TextLabel_18.Parent = ScriptsListFrame
+TextLabel_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_18.BackgroundTransparency = 1.000
+TextLabel_18.Position = UDim2.new(0.349999994, 0, 0, 0)
+TextLabel_18.Size = UDim2.new(0, 95, 0, 30)
+TextLabel_18.ZIndex = 3
+TextLabel_18.Font = Enum.Font.SourceSans
+TextLabel_18.Text = "Scripts List"
+TextLabel_18.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_18.TextSize = 24.000
+
+ScrollingFrame_4.Parent = ScriptsListFrame
+ScrollingFrame_4.Active = true
+ScrollingFrame_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame_4.BackgroundTransparency = 1.000
+ScrollingFrame_4.ScrollBarImageTransparency = 1.000
+ScrollingFrame_4.Position = UDim2.new(0.0142857144, 0, 0.121951222, 0)
+ScrollingFrame_4.Size = UDim2.new(0, 430, 0, 212)
+ScrollingFrame_4.ZIndex = 3
+ScrollingFrame_4.VerticalScrollBarInset = Enum.ScrollBarInset.Always
+
+UIListLayout_2.Parent = ScrollingFrame_4
+UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_2.Padding = UDim.new(0, 3)
+
+refresh.Name = "refresh"
+refresh.Parent = ScriptsListFrame
+refresh.BackgroundTransparency = 1.000
+refresh.LayoutOrder = 1
+refresh.Position = UDim2.new(0.938095212, 0, 0.00813007355, 0)
+refresh.Size = UDim2.new(0, 25, 0, 25)
+refresh.ZIndex = 2
+refresh.Image = "rbxassetid://3926307971"
+refresh.ImageRectOffset = Vector2.new(404, 84)
+refresh.ImageRectSize = Vector2.new(36, 36)
+
 -- Scripts:
 
-local function VVPLEJ_fake_script() -- HideButton.LocalScript 
+local function HBGVUW_fake_script() -- HideButton.LocalScript 
 	local script = Instance.new('LocalScript', HideButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(VVPLEJ_fake_script)()
-local function MMJHWUO_fake_script() -- Home.LocalScript 
+coroutine.wrap(HBGVUW_fake_script)()
+local function DGOB_fake_script() -- Home.LocalScript 
 	local script = Instance.new('LocalScript', Home)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1354,10 +1433,11 @@ local function MMJHWUO_fake_script() -- Home.LocalScript
 		script.Parent.Parent.Parent.Parent.TabsFrame.MusicPlyrTab.Visible = false
 		script.Parent.Parent.Parent.Parent.TabsFrame.SettingsTab.Visible = false
 		script.Parent.Parent.Parent.Parent.TabsFrame.ServerTab.Visible = false
+		script.Parent.Parent.Parent.Parent.TabsFrame.ScriptsListTab.Visible = false
 	end)
 end
-coroutine.wrap(MMJHWUO_fake_script)()
-local function ATTBQ_fake_script() -- ExecTabButton.LocalScript 
+coroutine.wrap(DGOB_fake_script)()
+local function KMPBR_fake_script() -- ExecTabButton.LocalScript 
 	local script = Instance.new('LocalScript', ExecTabButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1367,10 +1447,11 @@ local function ATTBQ_fake_script() -- ExecTabButton.LocalScript
 		script.Parent.Parent.Parent.Parent.TabsFrame.MusicPlyrTab.Visible = false
 		script.Parent.Parent.Parent.Parent.TabsFrame.SettingsTab.Visible = false
 		script.Parent.Parent.Parent.Parent.TabsFrame.ServerTab.Visible = false
+		script.Parent.Parent.Parent.Parent.TabsFrame.ScriptsListTab.Visible = false
 	end)
 end
-coroutine.wrap(ATTBQ_fake_script)()
-local function TKJRO_fake_script() -- Settings.LocalScript 
+coroutine.wrap(KMPBR_fake_script)()
+local function LTZL_fake_script() -- Settings.LocalScript 
 	local script = Instance.new('LocalScript', Settings)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1380,10 +1461,11 @@ local function TKJRO_fake_script() -- Settings.LocalScript
 		script.Parent.Parent.Parent.Parent.TabsFrame.MusicPlyrTab.Visible = false
 		script.Parent.Parent.Parent.Parent.TabsFrame.SettingsTab.Visible = true
 		script.Parent.Parent.Parent.Parent.TabsFrame.ServerTab.Visible = false
+		script.Parent.Parent.Parent.Parent.TabsFrame.ScriptsListTab.Visible = false
 	end)
 end
-coroutine.wrap(TKJRO_fake_script)()
-local function MVIZVE_fake_script() -- MusicPlyrTabButton.LocalScript 
+coroutine.wrap(LTZL_fake_script)()
+local function UUZOOJ_fake_script() -- MusicPlyrTabButton.LocalScript 
 	local script = Instance.new('LocalScript', MusicPlyrTabButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1393,10 +1475,11 @@ local function MVIZVE_fake_script() -- MusicPlyrTabButton.LocalScript
 		script.Parent.Parent.Parent.Parent.TabsFrame.MusicPlyrTab.Visible = true
 		script.Parent.Parent.Parent.Parent.TabsFrame.SettingsTab.Visible = false
 		script.Parent.Parent.Parent.Parent.TabsFrame.ServerTab.Visible = false
+		script.Parent.Parent.Parent.Parent.TabsFrame.ScriptsListTab.Visible = false
 	end)
 end
-coroutine.wrap(MVIZVE_fake_script)()
-local function TIAQ_fake_script() -- CreditsTabButton.LocalScript 
+coroutine.wrap(UUZOOJ_fake_script)()
+local function WGPN_fake_script() -- CreditsTabButton.LocalScript 
 	local script = Instance.new('LocalScript', CreditsTabButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1406,10 +1489,11 @@ local function TIAQ_fake_script() -- CreditsTabButton.LocalScript
 		script.Parent.Parent.Parent.Parent.TabsFrame.MusicPlyrTab.Visible = false
 		script.Parent.Parent.Parent.Parent.TabsFrame.SettingsTab.Visible = false
 		script.Parent.Parent.Parent.Parent.TabsFrame.ServerTab.Visible = false
+		script.Parent.Parent.Parent.Parent.TabsFrame.ScriptsListTab.Visible = false
 	end)
 end
-coroutine.wrap(TIAQ_fake_script)()
-local function NBIM_fake_script() -- ServerTabButton.LocalScript 
+coroutine.wrap(WGPN_fake_script)()
+local function YBWOFY_fake_script() -- ServerTabButton.LocalScript 
 	local script = Instance.new('LocalScript', ServerTabButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1419,10 +1503,25 @@ local function NBIM_fake_script() -- ServerTabButton.LocalScript
 		script.Parent.Parent.Parent.Parent.TabsFrame.MusicPlyrTab.Visible = false
 		script.Parent.Parent.Parent.Parent.TabsFrame.SettingsTab.Visible = false
 		script.Parent.Parent.Parent.Parent.TabsFrame.ServerTab.Visible = true
+		script.Parent.Parent.Parent.Parent.TabsFrame.ScriptsListTab.Visible = false
 	end)
 end
-coroutine.wrap(NBIM_fake_script)()
-local function TVXYU_fake_script() -- Logo_2.LocalScript 
+coroutine.wrap(YBWOFY_fake_script)()
+local function JKLGGJA_fake_script() -- ScriptsList.LocalScript 
+	local script = Instance.new('LocalScript', ScriptsList)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.TabsFrame.CreditsTab.Visible = false
+		script.Parent.Parent.Parent.Parent.TabsFrame.ExecTab.Visible = false
+		script.Parent.Parent.Parent.Parent.TabsFrame.HomeTab.Visible = false
+		script.Parent.Parent.Parent.Parent.TabsFrame.MusicPlyrTab.Visible = false
+		script.Parent.Parent.Parent.Parent.TabsFrame.SettingsTab.Visible = false
+		script.Parent.Parent.Parent.Parent.TabsFrame.ServerTab.Visible = false
+		script.Parent.Parent.Parent.Parent.TabsFrame.ScriptsListTab.Visible = true
+	end)
+end
+coroutine.wrap(JKLGGJA_fake_script)()
+local function VLUSHNV_fake_script() -- Logo_2.LocalScript 
 	local script = Instance.new('LocalScript', Logo_2)
 
 	local Players = game:GetService("Players")
@@ -1440,8 +1539,8 @@ local function TVXYU_fake_script() -- Logo_2.LocalScript
 	imageLabel.Image = content
 	imageLabel.Size = UDim2.new(0,  65, 0,  65)
 end
-coroutine.wrap(TVXYU_fake_script)()
-local function STNIJ_fake_script() -- PlayerName.LocalScript 
+coroutine.wrap(VLUSHNV_fake_script)()
+local function EYUVZNT_fake_script() -- PlayerName.LocalScript 
 	local script = Instance.new('LocalScript', PlayerName)
 
 	local ok = script.Parent.Parent.PlayerName
@@ -1450,8 +1549,8 @@ local function STNIJ_fake_script() -- PlayerName.LocalScript
 	
 	ok.Text = player.DisplayName
 end
-coroutine.wrap(STNIJ_fake_script)()
-local function OHOZVIL_fake_script() -- IcebergBootStrapperStatus.LocalScript 
+coroutine.wrap(EYUVZNT_fake_script)()
+local function XCFFHP_fake_script() -- IcebergBootStrapperStatus.LocalScript 
 	local script = Instance.new('LocalScript', IcebergBootStrapperStatus)
 
 	local ok = script.Parent.Parent.IcebergBootStrapperStatus
@@ -1459,8 +1558,8 @@ local function OHOZVIL_fake_script() -- IcebergBootStrapperStatus.LocalScript
 	
 	ok.Text = version
 end
-coroutine.wrap(OHOZVIL_fake_script)()
-local function RNVRHD_fake_script() -- IcebergUIStatus.LocalScript 
+coroutine.wrap(XCFFHP_fake_script)()
+local function AFADBOR_fake_script() -- IcebergUIStatus.LocalScript 
 	local script = Instance.new('LocalScript', IcebergUIStatus)
 
 	local ok = script.Parent.Parent.IcebergUIStatus
@@ -1468,14 +1567,14 @@ local function RNVRHD_fake_script() -- IcebergUIStatus.LocalScript
 	
 	ok.Text = version
 end
-coroutine.wrap(RNVRHD_fake_script)()
-local function GOWVI_fake_script() -- ChangeLog.LocalScript 
+coroutine.wrap(AFADBOR_fake_script)()
+local function QXQF_fake_script() -- ChangeLog.LocalScript 
 	local script = Instance.new('LocalScript', ChangeLog)
 
 	script.Parent.Text = game:HttpGet("https://raw.githubusercontent.com/XtremeSploit/Iceberg/main/Change%20Logs")
 end
-coroutine.wrap(GOWVI_fake_script)()
-local function JCPL_fake_script() -- GameName.LocalScript 
+coroutine.wrap(QXQF_fake_script)()
+local function QZJFIX_fake_script() -- GameName.LocalScript 
 	local script = Instance.new('LocalScript', GameName)
 
 	local PlaceId = game.PlaceId
@@ -1487,8 +1586,8 @@ local function JCPL_fake_script() -- GameName.LocalScript
 		ok.Text = info.Name
 	end
 end
-coroutine.wrap(JCPL_fake_script)()
-local function UERXXR_fake_script() -- GameID.LocalScript 
+coroutine.wrap(QZJFIX_fake_script)()
+local function WQPO_fake_script() -- GameID.LocalScript 
 	local script = Instance.new('LocalScript', GameID)
 
 	local PlaceId = game.PlaceId
@@ -1496,8 +1595,8 @@ local function UERXXR_fake_script() -- GameID.LocalScript
 	
 	ok.Text = PlaceId
 end
-coroutine.wrap(UERXXR_fake_script)()
-local function EHLHILQ_fake_script() -- PlayingTime.LocalScript 
+coroutine.wrap(WQPO_fake_script)()
+local function VOLQXHR_fake_script() -- PlayingTime.LocalScript 
 	local script = Instance.new('LocalScript', PlayingTime)
 
 	-- the script just shows the time that u were in server, not the acuall server age
@@ -1523,8 +1622,8 @@ local function EHLHILQ_fake_script() -- PlayingTime.LocalScript
 	
 	
 end
-coroutine.wrap(EHLHILQ_fake_script)()
-local function MJHQCOV_fake_script() -- igPlayers.LocalScript 
+coroutine.wrap(VOLQXHR_fake_script)()
+local function DPGSFDB_fake_script() -- igPlayers.LocalScript 
 	local script = Instance.new('LocalScript', igPlayers)
 
 	local Players = game:GetService("Players")
@@ -1545,8 +1644,8 @@ local function MJHQCOV_fake_script() -- igPlayers.LocalScript
 	end
 	
 end
-coroutine.wrap(MJHQCOV_fake_script)()
-local function LBQPCY_fake_script() -- PlayerFps.LocalScript 
+coroutine.wrap(DPGSFDB_fake_script)()
+local function SFYPGIM_fake_script() -- PlayerFps.LocalScript 
 	local script = Instance.new('LocalScript', PlayerFps)
 
 	local RunService = game:GetService("RunService")
@@ -1570,8 +1669,8 @@ local function LBQPCY_fake_script() -- PlayerFps.LocalScript
 	Start = TimeFunction()
 	RunService.Heartbeat:Connect(HeartbeatUpdate)
 end
-coroutine.wrap(LBQPCY_fake_script)()
-local function SSWJCDP_fake_script() -- Executebtn.Functioning 
+coroutine.wrap(SFYPGIM_fake_script)()
+local function HZGVAN_fake_script() -- Executebtn.Functioning 
 	local script = Instance.new('LocalScript', Executebtn)
 
 	local textEditor = script.Parent.Parent.Frame.ScrollingFrame.EditorFrame.Source
@@ -1579,8 +1678,8 @@ local function SSWJCDP_fake_script() -- Executebtn.Functioning
 		loadstring(textEditor.Text)()
 	end)
 end
-coroutine.wrap(SSWJCDP_fake_script)()
-local function THAV_fake_script() -- delete.LocalScript 
+coroutine.wrap(HZGVAN_fake_script)()
+local function MZXUM_fake_script() -- delete.LocalScript 
 	local script = Instance.new('LocalScript', delete)
 
 	local txt = script.Parent.Parent.Frame.ScrollingFrame.EditorFrame.Source
@@ -1588,8 +1687,8 @@ local function THAV_fake_script() -- delete.LocalScript
 		txt.Text = ""
 	end)
 end
-coroutine.wrap(THAV_fake_script)()
-local function TPYMYAI_fake_script() -- ScrollingFrame_2.LocalScript 
+coroutine.wrap(MZXUM_fake_script)()
+local function ELVDJXI_fake_script() -- ScrollingFrame_2.LocalScript 
 	local script = Instance.new('LocalScript', ScrollingFrame_2)
 
 	-- falsepikawoods
@@ -1775,8 +1874,8 @@ local function TPYMYAI_fake_script() -- ScrollingFrame_2.LocalScript
 	
 	
 end
-coroutine.wrap(TPYMYAI_fake_script)()
-local function LEGCD_fake_script() -- saveScripts.LocalScript 
+coroutine.wrap(ELVDJXI_fake_script)()
+local function TMSH_fake_script() -- saveScripts.LocalScript 
 	local script = Instance.new('LocalScript', saveScripts)
 
 	local textEditor = script.Parent.Parent.Frame.ScrollingFrame.EditorFrame.Source
@@ -1791,8 +1890,8 @@ local function LEGCD_fake_script() -- saveScripts.LocalScript
 	end)
 	
 end
-coroutine.wrap(LEGCD_fake_script)()
-local function MOTEAZ_fake_script() -- MainTab.LocalScript 
+coroutine.wrap(TMSH_fake_script)()
+local function DWNWFUP_fake_script() -- MainTab.LocalScript 
 	local script = Instance.new('LocalScript', MainTab)
 
 	local textEditor = script.Parent.Parent.Parent.Frame.ScrollingFrame.EditorFrame.Source
@@ -1814,8 +1913,8 @@ local function MOTEAZ_fake_script() -- MainTab.LocalScript
 		end
 	end)
 end
-coroutine.wrap(MOTEAZ_fake_script)()
-local function ZVNRTG_fake_script() -- Tab.LocalScript 
+coroutine.wrap(DWNWFUP_fake_script)()
+local function SDZU_fake_script() -- Tab.LocalScript 
 	local script = Instance.new('LocalScript', Tab)
 
 	local textEditor = script.Parent.Parent.Parent.Parent.Frame.ScrollingFrame.EditorFrame.Source
@@ -1831,8 +1930,8 @@ local function ZVNRTG_fake_script() -- Tab.LocalScript
 		end
 	end)
 end
-coroutine.wrap(ZVNRTG_fake_script)()
-local function GDZEXW_fake_script() -- CloseTabBtn.LocalScript 
+coroutine.wrap(SDZU_fake_script)()
+local function JHBWQB_fake_script() -- CloseTabBtn.LocalScript 
 	local script = Instance.new('LocalScript', CloseTabBtn)
 
 	local tab = script.Parent.Parent
@@ -1841,8 +1940,8 @@ local function GDZEXW_fake_script() -- CloseTabBtn.LocalScript
 		tab:Destroy()
 	end)
 end
-coroutine.wrap(GDZEXW_fake_script)()
-local function NBUZI_fake_script() -- zAddTabBtn.LocalScript 
+coroutine.wrap(JHBWQB_fake_script)()
+local function XBYS_fake_script() -- zAddTabBtn.LocalScript 
 	local script = Instance.new('LocalScript', zAddTabBtn)
 
 	_G.tabNum = -1
@@ -1935,8 +2034,8 @@ local function NBUZI_fake_script() -- zAddTabBtn.LocalScript
 		coroutine.wrap(AQKJ_fake_script)()
 	end)
 end
-coroutine.wrap(NBUZI_fake_script)()
-local function MGLC_fake_script() -- ScrollingFrame_3.LocalScript 
+coroutine.wrap(XBYS_fake_script)()
+local function WPJC_fake_script() -- ScrollingFrame_3.LocalScript 
 	local script = Instance.new('LocalScript', ScrollingFrame_3)
 
 	local ScrollingFrame = script.Parent
@@ -1946,8 +2045,8 @@ local function MGLC_fake_script() -- ScrollingFrame_3.LocalScript
 		ScrollingFrame.CanvasPosition = Vector2.new(0, ContentSize)
 	end)
 end
-coroutine.wrap(MGLC_fake_script)()
-local function JEDZQR_fake_script() -- TextLabel_14.LocalScript 
+coroutine.wrap(WPJC_fake_script)()
+local function ISVS_fake_script() -- TextLabel_14.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_14)
 
 	while true do
@@ -1955,8 +2054,8 @@ local function JEDZQR_fake_script() -- TextLabel_14.LocalScript
 		script.Parent.Text = "Current Tab is: ".._G.tab
 	end
 end
-coroutine.wrap(JEDZQR_fake_script)()
-local function KKIQI_fake_script() -- AutoR6Toggle.Script 
+coroutine.wrap(ISVS_fake_script)()
+local function YQOWOEX_fake_script() -- AutoR6Toggle.Script 
 	local script = Instance.new('LocalScript', AutoR6Toggle)
 
 	local toggled = false -- The start state of the toggle
@@ -1982,9 +2081,9 @@ local function KKIQI_fake_script() -- AutoR6Toggle.Script
 		end
 	end)
 end
-coroutine.wrap(KKIQI_fake_script)()
+coroutine.wrap(YQOWOEX_fake_script)()
 -- AutoR6Toggle.R6OnOff is disabled.
-local function HYXKJV_fake_script() -- SwithcerToggle.Script 
+local function GZFNA_fake_script() -- SwithcerToggle.Script 
 	local script = Instance.new('LocalScript', SwithcerToggle)
 
 	local toggled = false -- The start state of the toggle
@@ -2013,8 +2112,8 @@ local function HYXKJV_fake_script() -- SwithcerToggle.Script
 		end
 	end)
 end
-coroutine.wrap(HYXKJV_fake_script)()
-local function YSGT_fake_script() -- ServerBtn.LocalScript 
+coroutine.wrap(GZFNA_fake_script)()
+local function PWGI_fake_script() -- ServerBtn.LocalScript 
 	local script = Instance.new('LocalScript', ServerBtn)
 
 	local a = "https://raw.githubusercontent.com/XtremeSploit/Iceberg/main/Discord%20Server%20Link"
@@ -2027,8 +2126,308 @@ local function YSGT_fake_script() -- ServerBtn.LocalScript
 	end)
 	
 end
-coroutine.wrap(YSGT_fake_script)()
-local function MHXDCK_fake_script() -- MainFrame.Hide/Unhide 
+coroutine.wrap(PWGI_fake_script)()
+local function IPGIG_fake_script() -- ScrollingFrame_4.LocalScript 
+	local script = Instance.new('LocalScript', ScrollingFrame_4)
+
+	_G.fileslist = listfiles("Scripts")
+	function tablelength()
+		local count = 0
+		for _ in pairs(_G.fileslist) do count = count + 1 end
+		return count
+	end
+	
+	_G.scriptNum = 0
+	
+	
+	while _G.scriptNum < tablelength(_G.fileslist) do
+		wait()
+		_G.scriptNum += 1
+		
+		
+		local ScriptBox = Instance.new("ImageLabel")
+		local ScriptName = Instance.new("TextLabel")
+		local ExecScript = Instance.new("TextButton")
+		local TextButton_Roundify_5px_2 = Instance.new("ImageLabel")
+		local loadScriptToEditor = Instance.new("TextButton")
+		local TextButton_Roundify_5px_3 = Instance.new("ImageLabel")
+		
+		ScriptBox.Name = "ScriptBox"
+		ScriptBox.Parent = script.Parent
+		ScriptBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		ScriptBox.BackgroundTransparency = 1.000
+		ScriptBox.Size = UDim2.new(0, 409, 0, 29)
+		ScriptBox.ZIndex = 2
+		ScriptBox.Image = "rbxassetid://3570695787"
+		ScriptBox.ImageColor3 = Color3.fromRGB(20, 20, 20)
+		ScriptBox.ScaleType = Enum.ScaleType.Slice
+		ScriptBox.SliceCenter = Rect.new(100, 100, 100, 100)
+		ScriptBox.SliceScale = 0.050
+	
+		ScriptName.Name = "ScriptName"
+		ScriptName.Parent = ScriptBox
+		ScriptName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		ScriptName.BackgroundTransparency = 1.000
+		ScriptName.Position = UDim2.new(0.0150367348, 0, 0, 0)
+		ScriptName.Size = UDim2.new(0, 218, 0, 29)
+		ScriptName.ZIndex = 3
+		ScriptName.Font = Enum.Font.SourceSans
+		ScriptName.Text = _G.fileslist[_G.scriptNum]
+		ScriptName.TextColor3 = Color3.fromRGB(255, 255, 255)
+		ScriptName.TextScaled = true
+		ScriptName.TextSize = 24.000
+		ScriptName.TextWrapped = true
+		ScriptName.TextXAlignment = Enum.TextXAlignment.Left
+		
+		
+		
+		ExecScript.Name = "ExecScript"
+		ExecScript.Parent = ScriptBox
+		ExecScript.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		ExecScript.BackgroundTransparency = 1.000
+		ExecScript.BorderSizePixel = 0
+		ExecScript.Position = UDim2.new(0.773545265, 0, 0.102999985, 0)
+		ExecScript.Size = UDim2.new(0, 90, 0, 23)
+		ExecScript.ZIndex = 4
+		ExecScript.Font = Enum.Font.SourceSans
+		ExecScript.Text = "Execute Script"
+		ExecScript.TextColor3 = Color3.fromRGB(255, 255, 255)
+		ExecScript.TextScaled = true
+		ExecScript.TextSize = 14.000
+		ExecScript.TextWrapped = true
+		
+		local function GEPTK_fake_script() -- ExecScript.LocalScript 
+			local script = Instance.new('LocalScript', ExecScript)
+	
+			local scriptNum = _G.scriptNum
+			script.Parent.MouseButton1Click:Connect(function()
+				loadstring(readfile("Scripts/".._G.fileslist[scriptNum]))()
+			end)
+		end
+		coroutine.wrap(GEPTK_fake_script)()
+		
+		TextButton_Roundify_5px_2.Name = "TextButton_Roundify_5px"
+		TextButton_Roundify_5px_2.Parent = ExecScript
+		TextButton_Roundify_5px_2.Active = true
+		TextButton_Roundify_5px_2.AnchorPoint = Vector2.new(0.5, 0.5)
+		TextButton_Roundify_5px_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextButton_Roundify_5px_2.BackgroundTransparency = 1.000
+		TextButton_Roundify_5px_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+		TextButton_Roundify_5px_2.Selectable = true
+		TextButton_Roundify_5px_2.Size = UDim2.new(1, 0, 1, 0)
+		TextButton_Roundify_5px_2.ZIndex = 3
+		TextButton_Roundify_5px_2.Image = "rbxassetid://3570695787"
+		TextButton_Roundify_5px_2.ImageColor3 = Color3.fromRGB(30, 30, 30)
+		TextButton_Roundify_5px_2.ScaleType = Enum.ScaleType.Slice
+		TextButton_Roundify_5px_2.SliceCenter = Rect.new(100, 100, 100, 100)
+		TextButton_Roundify_5px_2.SliceScale = 0.050
+	
+		loadScriptToEditor.Name = "loadScriptToEditor"
+		loadScriptToEditor.Parent = ScriptBox
+		loadScriptToEditor.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		loadScriptToEditor.BackgroundTransparency = 1.000
+		loadScriptToEditor.BorderSizePixel = 0
+		loadScriptToEditor.Position = UDim2.new(0.547999978, 0, 0.103, 0)
+		loadScriptToEditor.Size = UDim2.new(0, 90, 0, 23)
+		loadScriptToEditor.ZIndex = 4
+		loadScriptToEditor.Font = Enum.Font.SourceSans
+		loadScriptToEditor.Text = "Load Script To Editor"
+		loadScriptToEditor.TextColor3 = Color3.fromRGB(255, 255, 255)
+		loadScriptToEditor.TextScaled = true
+		loadScriptToEditor.TextSize = 14.000
+		loadScriptToEditor.TextWrapped = true
+		
+		local function SFNQK_fake_script() -- loadScriptToEditor.LocalScript 
+			local script = Instance.new('LocalScript', loadScriptToEditor)
+	
+			local editor = script.Parent.Parent.Parent.Parent.Parent.Parent.ExecTab.Frame.Frame.ScrollingFrame.EditorFrame.Source
+			local scriptNum = _G.scriptNum
+			script.Parent.MouseButton1Click:Connect(function()
+				editor.Text = readfile("Scripts/".._G.fileslist[scriptNum])
+			end)
+		end
+		coroutine.wrap(SFNQK_fake_script)()
+		
+		
+		TextButton_Roundify_5px_3.Name = "TextButton_Roundify_5px"
+		TextButton_Roundify_5px_3.Parent = loadScriptToEditor
+		TextButton_Roundify_5px_3.Active = true
+		TextButton_Roundify_5px_3.AnchorPoint = Vector2.new(0.5, 0.5)
+		TextButton_Roundify_5px_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextButton_Roundify_5px_3.BackgroundTransparency = 1.000
+		TextButton_Roundify_5px_3.Position = UDim2.new(0.5, 0, 0.5, 0)
+		TextButton_Roundify_5px_3.Selectable = true
+		TextButton_Roundify_5px_3.Size = UDim2.new(1, 0, 1, 0)
+		TextButton_Roundify_5px_3.ZIndex = 3
+		TextButton_Roundify_5px_3.Image = "rbxassetid://3570695787"
+		TextButton_Roundify_5px_3.ImageColor3 = Color3.fromRGB(30, 30, 30)
+		TextButton_Roundify_5px_3.ScaleType = Enum.ScaleType.Slice
+		TextButton_Roundify_5px_3.SliceCenter = Rect.new(100, 100, 100, 100)
+		TextButton_Roundify_5px_3.SliceScale = 0.050
+	
+	end
+	
+end
+coroutine.wrap(IPGIG_fake_script)()
+local function UCHHJIF_fake_script() -- refresh.LocalScript 
+	local script = Instance.new('LocalScript', refresh)
+
+	local condition = false
+	local i = 1
+	script.Parent.MouseButton1Click:Connect(function()
+		local items = script.Parent.Parent.ScrollingFrame:GetChildren()
+		condition = true
+		while condition do
+			if not(i == 1 or i ==2) and not(items[i] == false) then
+				if items[i] then
+					items[i]:Destroy()
+				else
+					condition = false
+					i = 1
+					_G.scriptNum = 0
+					break
+				end
+			end
+			i += 1
+		end
+		
+		_G.fileslist = listfiles("Scripts")
+		function tablelength()
+			local count = 0
+			for _ in pairs(_G.fileslist) do count = count + 1 end
+			return count
+		end
+		
+		while _G.scriptNum < tablelength(_G.fileslist) do
+			wait()
+			_G.scriptNum += 1
+	
+	
+			local ScriptBox = Instance.new("ImageLabel")
+			local ScriptName = Instance.new("TextLabel")
+			local ExecScript = Instance.new("TextButton")
+			local TextButton_Roundify_5px_2 = Instance.new("ImageLabel")
+			local loadScriptToEditor = Instance.new("TextButton")
+			local TextButton_Roundify_5px_3 = Instance.new("ImageLabel")
+	
+			ScriptBox.Name = "ScriptBox"
+			ScriptBox.Parent = script.Parent.Parent.ScrollingFrame
+			ScriptBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			ScriptBox.BackgroundTransparency = 1.000
+			ScriptBox.Size = UDim2.new(0, 409, 0, 29)
+			ScriptBox.ZIndex = 2
+			ScriptBox.Image = "rbxassetid://3570695787"
+			ScriptBox.ImageColor3 = Color3.fromRGB(20, 20, 20)
+			ScriptBox.ScaleType = Enum.ScaleType.Slice
+			ScriptBox.SliceCenter = Rect.new(100, 100, 100, 100)
+			ScriptBox.SliceScale = 0.050
+	
+			ScriptName.Name = "ScriptName"
+			ScriptName.Parent = ScriptBox
+			ScriptName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			ScriptName.BackgroundTransparency = 1.000
+			ScriptName.Position = UDim2.new(0.0150367348, 0, 0, 0)
+			ScriptName.Size = UDim2.new(0, 218, 0, 29)
+			ScriptName.ZIndex = 3
+			ScriptName.Font = Enum.Font.SourceSans
+			ScriptName.Text = _G.fileslist[_G.scriptNum]
+			ScriptName.TextColor3 = Color3.fromRGB(255, 255, 255)
+			ScriptName.TextScaled = true
+			ScriptName.TextSize = 24.000
+			ScriptName.TextWrapped = true
+			ScriptName.TextXAlignment = Enum.TextXAlignment.Left
+	
+	
+	
+			ExecScript.Name = "ExecScript"
+			ExecScript.Parent = ScriptBox
+			ExecScript.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			ExecScript.BackgroundTransparency = 1.000
+			ExecScript.BorderSizePixel = 0
+			ExecScript.Position = UDim2.new(0.773545265, 0, 0.102999985, 0)
+			ExecScript.Size = UDim2.new(0, 90, 0, 23)
+			ExecScript.ZIndex = 4
+			ExecScript.Font = Enum.Font.SourceSans
+			ExecScript.Text = "Execute Script"
+			ExecScript.TextColor3 = Color3.fromRGB(255, 255, 255)
+			ExecScript.TextScaled = true
+			ExecScript.TextSize = 14.000
+			ExecScript.TextWrapped = true
+	
+			local function GEPTK_fake_script() -- ExecScript.LocalScript 
+				local script = Instance.new('LocalScript', ExecScript)
+	
+				local scriptNum = _G.scriptNum
+				script.Parent.MouseButton1Click:Connect(function()
+					loadstring(readfile("Scripts/".._G.fileslist[scriptNum]))()
+				end)
+			end
+			coroutine.wrap(GEPTK_fake_script)()
+	
+			TextButton_Roundify_5px_2.Name = "TextButton_Roundify_5px"
+			TextButton_Roundify_5px_2.Parent = ExecScript
+			TextButton_Roundify_5px_2.Active = true
+			TextButton_Roundify_5px_2.AnchorPoint = Vector2.new(0.5, 0.5)
+			TextButton_Roundify_5px_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			TextButton_Roundify_5px_2.BackgroundTransparency = 1.000
+			TextButton_Roundify_5px_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+			TextButton_Roundify_5px_2.Selectable = true
+			TextButton_Roundify_5px_2.Size = UDim2.new(1, 0, 1, 0)
+			TextButton_Roundify_5px_2.ZIndex = 3
+			TextButton_Roundify_5px_2.Image = "rbxassetid://3570695787"
+			TextButton_Roundify_5px_2.ImageColor3 = Color3.fromRGB(30, 30, 30)
+			TextButton_Roundify_5px_2.ScaleType = Enum.ScaleType.Slice
+			TextButton_Roundify_5px_2.SliceCenter = Rect.new(100, 100, 100, 100)
+			TextButton_Roundify_5px_2.SliceScale = 0.050
+	
+			loadScriptToEditor.Name = "loadScriptToEditor"
+			loadScriptToEditor.Parent = ScriptBox
+			loadScriptToEditor.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			loadScriptToEditor.BackgroundTransparency = 1.000
+			loadScriptToEditor.BorderSizePixel = 0
+			loadScriptToEditor.Position = UDim2.new(0.547999978, 0, 0.103, 0)
+			loadScriptToEditor.Size = UDim2.new(0, 90, 0, 23)
+			loadScriptToEditor.ZIndex = 4
+			loadScriptToEditor.Font = Enum.Font.SourceSans
+			loadScriptToEditor.Text = "Load Script To Editor"
+			loadScriptToEditor.TextColor3 = Color3.fromRGB(255, 255, 255)
+			loadScriptToEditor.TextScaled = true
+			loadScriptToEditor.TextSize = 14.000
+			loadScriptToEditor.TextWrapped = true
+	
+			local function SFNQK_fake_script() -- loadScriptToEditor.LocalScript 
+				local script = Instance.new('LocalScript', loadScriptToEditor)
+	
+				local editor = script.Parent.Parent.Parent.Parent.Parent.Parent.ExecTab.Frame.Frame.ScrollingFrame.EditorFrame.Source
+				local scriptNum = _G.scriptNum
+				script.Parent.MouseButton1Click:Connect(function()
+					editor.Text = readfile("Scripts/".._G.fileslist[scriptNum])
+				end)
+			end
+			coroutine.wrap(SFNQK_fake_script)()
+	
+	
+			TextButton_Roundify_5px_3.Name = "TextButton_Roundify_5px"
+			TextButton_Roundify_5px_3.Parent = loadScriptToEditor
+			TextButton_Roundify_5px_3.Active = true
+			TextButton_Roundify_5px_3.AnchorPoint = Vector2.new(0.5, 0.5)
+			TextButton_Roundify_5px_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			TextButton_Roundify_5px_3.BackgroundTransparency = 1.000
+			TextButton_Roundify_5px_3.Position = UDim2.new(0.5, 0, 0.5, 0)
+			TextButton_Roundify_5px_3.Selectable = true
+			TextButton_Roundify_5px_3.Size = UDim2.new(1, 0, 1, 0)
+			TextButton_Roundify_5px_3.ZIndex = 3
+			TextButton_Roundify_5px_3.Image = "rbxassetid://3570695787"
+			TextButton_Roundify_5px_3.ImageColor3 = Color3.fromRGB(30, 30, 30)
+			TextButton_Roundify_5px_3.ScaleType = Enum.ScaleType.Slice
+			TextButton_Roundify_5px_3.SliceCenter = Rect.new(100, 100, 100, 100)
+			TextButton_Roundify_5px_3.SliceScale = 0.050
+			end
+		
+	end)
+end
+coroutine.wrap(UCHHJIF_fake_script)()
+local function ZZMRXW_fake_script() -- MainFrame.Hide/Unhide 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	local userinput = game:GetService("UserInputService")
@@ -2041,8 +2440,8 @@ local function MHXDCK_fake_script() -- MainFrame.Hide/Unhide
 		end
 	end)
 end
-coroutine.wrap(MHXDCK_fake_script)()
-local function TNPH_fake_script() -- MainFrame.Dragify 
+coroutine.wrap(ZZMRXW_fake_script)()
+local function TRJPQLL_fake_script() -- MainFrame.Dragify 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	-- Dragify
@@ -2085,8 +2484,8 @@ local function TNPH_fake_script() -- MainFrame.Dragify
 	
 	dragify(script.Parent)
 end
-coroutine.wrap(TNPH_fake_script)()
-local function SIMJONR_fake_script() -- MainFrame.LodingAnimetion 
+coroutine.wrap(TRJPQLL_fake_script)()
+local function RQUZR_fake_script() -- MainFrame.LodingAnimetion 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	local blur = Instance.new("BlurEffect", game.Lighting)
@@ -2119,4 +2518,4 @@ local function SIMJONR_fake_script() -- MainFrame.LodingAnimetion
 	wait()
 	script.Parent.Visible = true
 end
-coroutine.wrap(SIMJONR_fake_script)()
+coroutine.wrap(RQUZR_fake_script)()
