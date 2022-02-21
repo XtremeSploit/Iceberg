@@ -1,7 +1,2 @@
-UI Changes
-  [+] Added Scripts folder tab
-  now you can use you own scripts
-  [-] the scrolling bars bug still
-  there and the scrolling bar in the 
-  scripts folder tab isnt functional
-  I will fix both tomorrow
+Bug Fixes
+  [+] Fixed the Scrolling in Scripts Folder
