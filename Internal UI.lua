@@ -1416,15 +1416,15 @@ refresh.ImageRectSize = Vector2.new(36, 36)
 
 -- Scripts:
 
-local function GBUCAB_fake_script() -- HideButton.LocalScript 
+local function GSYQ_fake_script() -- HideButton.LocalScript 
 	local script = Instance.new('LocalScript', HideButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(GBUCAB_fake_script)()
-local function WBARY_fake_script() -- Home.LocalScript 
+coroutine.wrap(GSYQ_fake_script)()
+local function FGRWM_fake_script() -- Home.LocalScript 
 	local script = Instance.new('LocalScript', Home)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1437,8 +1437,8 @@ local function WBARY_fake_script() -- Home.LocalScript
 		script.Parent.Parent.Parent.Parent.TabsFrame.ScriptsListTab.Visible = false
 	end)
 end
-coroutine.wrap(WBARY_fake_script)()
-local function PTRKDRI_fake_script() -- ExecTabButton.LocalScript 
+coroutine.wrap(FGRWM_fake_script)()
+local function QRYPV_fake_script() -- ExecTabButton.LocalScript 
 	local script = Instance.new('LocalScript', ExecTabButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1451,8 +1451,8 @@ local function PTRKDRI_fake_script() -- ExecTabButton.LocalScript
 		script.Parent.Parent.Parent.Parent.TabsFrame.ScriptsListTab.Visible = false
 	end)
 end
-coroutine.wrap(PTRKDRI_fake_script)()
-local function SASQZEQ_fake_script() -- Settings.LocalScript 
+coroutine.wrap(QRYPV_fake_script)()
+local function YFTP_fake_script() -- Settings.LocalScript 
 	local script = Instance.new('LocalScript', Settings)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1465,8 +1465,8 @@ local function SASQZEQ_fake_script() -- Settings.LocalScript
 		script.Parent.Parent.Parent.Parent.TabsFrame.ScriptsListTab.Visible = false
 	end)
 end
-coroutine.wrap(SASQZEQ_fake_script)()
-local function YRUIOGU_fake_script() -- MusicPlyrTabButton.LocalScript 
+coroutine.wrap(YFTP_fake_script)()
+local function QGRH_fake_script() -- MusicPlyrTabButton.LocalScript 
 	local script = Instance.new('LocalScript', MusicPlyrTabButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1479,8 +1479,8 @@ local function YRUIOGU_fake_script() -- MusicPlyrTabButton.LocalScript
 		script.Parent.Parent.Parent.Parent.TabsFrame.ScriptsListTab.Visible = false
 	end)
 end
-coroutine.wrap(YRUIOGU_fake_script)()
-local function WLNOOYP_fake_script() -- CreditsTabButton.LocalScript 
+coroutine.wrap(QGRH_fake_script)()
+local function PQXPHZR_fake_script() -- CreditsTabButton.LocalScript 
 	local script = Instance.new('LocalScript', CreditsTabButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1493,8 +1493,8 @@ local function WLNOOYP_fake_script() -- CreditsTabButton.LocalScript
 		script.Parent.Parent.Parent.Parent.TabsFrame.ScriptsListTab.Visible = false
 	end)
 end
-coroutine.wrap(WLNOOYP_fake_script)()
-local function RAQQV_fake_script() -- ServerTabButton.LocalScript 
+coroutine.wrap(PQXPHZR_fake_script)()
+local function RJASQ_fake_script() -- ServerTabButton.LocalScript 
 	local script = Instance.new('LocalScript', ServerTabButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1507,8 +1507,8 @@ local function RAQQV_fake_script() -- ServerTabButton.LocalScript
 		script.Parent.Parent.Parent.Parent.TabsFrame.ScriptsListTab.Visible = false
 	end)
 end
-coroutine.wrap(RAQQV_fake_script)()
-local function PXZXHS_fake_script() -- ScriptsList.LocalScript 
+coroutine.wrap(RJASQ_fake_script)()
+local function SAQIGZF_fake_script() -- ScriptsList.LocalScript 
 	local script = Instance.new('LocalScript', ScriptsList)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1521,8 +1521,8 @@ local function PXZXHS_fake_script() -- ScriptsList.LocalScript
 		script.Parent.Parent.Parent.Parent.TabsFrame.ScriptsListTab.Visible = true
 	end)
 end
-coroutine.wrap(PXZXHS_fake_script)()
-local function RZWST_fake_script() -- Logo_2.LocalScript 
+coroutine.wrap(SAQIGZF_fake_script)()
+local function SDZYWX_fake_script() -- Logo_2.LocalScript 
 	local script = Instance.new('LocalScript', Logo_2)
 
 	local Players = game:GetService("Players")
@@ -1540,8 +1540,8 @@ local function RZWST_fake_script() -- Logo_2.LocalScript
 	imageLabel.Image = content
 	imageLabel.Size = UDim2.new(0,  65, 0,  65)
 end
-coroutine.wrap(RZWST_fake_script)()
-local function WOEWQX_fake_script() -- PlayerName.LocalScript 
+coroutine.wrap(SDZYWX_fake_script)()
+local function RIWS_fake_script() -- PlayerName.LocalScript 
 	local script = Instance.new('LocalScript', PlayerName)
 
 	local ok = script.Parent.Parent.PlayerName
@@ -1550,8 +1550,8 @@ local function WOEWQX_fake_script() -- PlayerName.LocalScript
 	
 	ok.Text = player.DisplayName
 end
-coroutine.wrap(WOEWQX_fake_script)()
-local function IPAA_fake_script() -- IcebergBootStrapperStatus.LocalScript 
+coroutine.wrap(RIWS_fake_script)()
+local function TLKHUN_fake_script() -- IcebergBootStrapperStatus.LocalScript 
 	local script = Instance.new('LocalScript', IcebergBootStrapperStatus)
 
 	local ok = script.Parent.Parent.IcebergBootStrapperStatus
@@ -1559,8 +1559,8 @@ local function IPAA_fake_script() -- IcebergBootStrapperStatus.LocalScript
 	
 	ok.Text = version
 end
-coroutine.wrap(IPAA_fake_script)()
-local function TIDZ_fake_script() -- IcebergUIStatus.LocalScript 
+coroutine.wrap(TLKHUN_fake_script)()
+local function FOETMGA_fake_script() -- IcebergUIStatus.LocalScript 
 	local script = Instance.new('LocalScript', IcebergUIStatus)
 
 	local ok = script.Parent.Parent.IcebergUIStatus
@@ -1568,14 +1568,14 @@ local function TIDZ_fake_script() -- IcebergUIStatus.LocalScript
 	
 	ok.Text = version
 end
-coroutine.wrap(TIDZ_fake_script)()
-local function SLOYLKS_fake_script() -- ChangeLog.LocalScript 
+coroutine.wrap(FOETMGA_fake_script)()
+local function CFMJZO_fake_script() -- ChangeLog.LocalScript 
 	local script = Instance.new('LocalScript', ChangeLog)
 
 	script.Parent.Text = game:HttpGet("https://raw.githubusercontent.com/XtremeSploit/Iceberg/main/Change%20Logs")
 end
-coroutine.wrap(SLOYLKS_fake_script)()
-local function OFSUD_fake_script() -- GameName.LocalScript 
+coroutine.wrap(CFMJZO_fake_script)()
+local function BUWKRTM_fake_script() -- GameName.LocalScript 
 	local script = Instance.new('LocalScript', GameName)
 
 	local PlaceId = game.PlaceId
@@ -1587,8 +1587,8 @@ local function OFSUD_fake_script() -- GameName.LocalScript
 		ok.Text = info.Name
 	end
 end
-coroutine.wrap(OFSUD_fake_script)()
-local function OTUZ_fake_script() -- GameID.LocalScript 
+coroutine.wrap(BUWKRTM_fake_script)()
+local function LFOP_fake_script() -- GameID.LocalScript 
 	local script = Instance.new('LocalScript', GameID)
 
 	local PlaceId = game.PlaceId
@@ -1596,8 +1596,8 @@ local function OTUZ_fake_script() -- GameID.LocalScript
 	
 	ok.Text = PlaceId
 end
-coroutine.wrap(OTUZ_fake_script)()
-local function ITODSOP_fake_script() -- PlayingTime.LocalScript 
+coroutine.wrap(LFOP_fake_script)()
+local function QJIDF_fake_script() -- PlayingTime.LocalScript 
 	local script = Instance.new('LocalScript', PlayingTime)
 
 	-- the script just shows the time that u were in server, not the acuall server age
@@ -1623,8 +1623,8 @@ local function ITODSOP_fake_script() -- PlayingTime.LocalScript
 	
 	
 end
-coroutine.wrap(ITODSOP_fake_script)()
-local function KSHEKL_fake_script() -- igPlayers.LocalScript 
+coroutine.wrap(QJIDF_fake_script)()
+local function RZKP_fake_script() -- igPlayers.LocalScript 
 	local script = Instance.new('LocalScript', igPlayers)
 
 	local Players = game:GetService("Players")
@@ -1645,8 +1645,8 @@ local function KSHEKL_fake_script() -- igPlayers.LocalScript
 	end
 	
 end
-coroutine.wrap(KSHEKL_fake_script)()
-local function DUUCU_fake_script() -- PlayerFps.LocalScript 
+coroutine.wrap(RZKP_fake_script)()
+local function HYRY_fake_script() -- PlayerFps.LocalScript 
 	local script = Instance.new('LocalScript', PlayerFps)
 
 	local RunService = game:GetService("RunService")
@@ -1670,8 +1670,8 @@ local function DUUCU_fake_script() -- PlayerFps.LocalScript
 	Start = TimeFunction()
 	RunService.Heartbeat:Connect(HeartbeatUpdate)
 end
-coroutine.wrap(DUUCU_fake_script)()
-local function HYUZN_fake_script() -- Executebtn.Functioning 
+coroutine.wrap(HYRY_fake_script)()
+local function SBBXKE_fake_script() -- Executebtn.Functioning 
 	local script = Instance.new('LocalScript', Executebtn)
 
 	local textEditor = script.Parent.Parent.Frame.ScrollingFrame.EditorFrame.Source
@@ -1679,8 +1679,8 @@ local function HYUZN_fake_script() -- Executebtn.Functioning
 		loadstring(textEditor.Text)()
 	end)
 end
-coroutine.wrap(HYUZN_fake_script)()
-local function LCGWRLQ_fake_script() -- delete.LocalScript 
+coroutine.wrap(SBBXKE_fake_script)()
+local function VITF_fake_script() -- delete.LocalScript 
 	local script = Instance.new('LocalScript', delete)
 
 	local txt = script.Parent.Parent.Frame.ScrollingFrame.EditorFrame.Source
@@ -1688,8 +1688,8 @@ local function LCGWRLQ_fake_script() -- delete.LocalScript
 		txt.Text = ""
 	end)
 end
-coroutine.wrap(LCGWRLQ_fake_script)()
-local function IQOGC_fake_script() -- ScrollingFrame_2.LocalScript 
+coroutine.wrap(VITF_fake_script)()
+local function XDOHXOX_fake_script() -- ScrollingFrame_2.LocalScript 
 	local script = Instance.new('LocalScript', ScrollingFrame_2)
 
 	-- falsepikawoods
@@ -1875,8 +1875,8 @@ local function IQOGC_fake_script() -- ScrollingFrame_2.LocalScript
 	
 	
 end
-coroutine.wrap(IQOGC_fake_script)()
-local function YCZZ_fake_script() -- saveScripts.LocalScript 
+coroutine.wrap(XDOHXOX_fake_script)()
+local function LIYYDYE_fake_script() -- saveScripts.LocalScript 
 	local script = Instance.new('LocalScript', saveScripts)
 
 	local textEditor = script.Parent.Parent.Frame.ScrollingFrame.EditorFrame.Source
@@ -1891,8 +1891,8 @@ local function YCZZ_fake_script() -- saveScripts.LocalScript
 	end)
 	
 end
-coroutine.wrap(YCZZ_fake_script)()
-local function SXKUFNU_fake_script() -- MainTab.LocalScript 
+coroutine.wrap(LIYYDYE_fake_script)()
+local function QZUD_fake_script() -- MainTab.LocalScript 
 	local script = Instance.new('LocalScript', MainTab)
 
 	local textEditor = script.Parent.Parent.Parent.Frame.ScrollingFrame.EditorFrame.Source
@@ -1914,8 +1914,8 @@ local function SXKUFNU_fake_script() -- MainTab.LocalScript
 		end
 	end)
 end
-coroutine.wrap(SXKUFNU_fake_script)()
-local function IPHS_fake_script() -- Tab.LocalScript 
+coroutine.wrap(QZUD_fake_script)()
+local function UAHJPTK_fake_script() -- Tab.LocalScript 
 	local script = Instance.new('LocalScript', Tab)
 
 	local textEditor = script.Parent.Parent.Parent.Parent.Frame.ScrollingFrame.EditorFrame.Source
@@ -1931,8 +1931,8 @@ local function IPHS_fake_script() -- Tab.LocalScript
 		end
 	end)
 end
-coroutine.wrap(IPHS_fake_script)()
-local function NWKQBM_fake_script() -- CloseTabBtn.LocalScript 
+coroutine.wrap(UAHJPTK_fake_script)()
+local function JICYL_fake_script() -- CloseTabBtn.LocalScript 
 	local script = Instance.new('LocalScript', CloseTabBtn)
 
 	local tab = script.Parent.Parent
@@ -1941,8 +1941,8 @@ local function NWKQBM_fake_script() -- CloseTabBtn.LocalScript
 		tab:Destroy()
 	end)
 end
-coroutine.wrap(NWKQBM_fake_script)()
-local function EUDVRN_fake_script() -- zAddTabBtn.LocalScript 
+coroutine.wrap(JICYL_fake_script)()
+local function MJBA_fake_script() -- zAddTabBtn.LocalScript 
 	local script = Instance.new('LocalScript', zAddTabBtn)
 
 	_G.tabNum = -1
@@ -2035,9 +2035,27 @@ local function EUDVRN_fake_script() -- zAddTabBtn.LocalScript
 		coroutine.wrap(AQKJ_fake_script)()
 	end)
 end
-coroutine.wrap(EUDVRN_fake_script)()
--- ScrollingFrame_3.LocalScript is disabled.
-local function NLOH_fake_script() -- TextLabel_14.LocalScript 
+coroutine.wrap(MJBA_fake_script)()
+local function TBJKU_fake_script() -- ScrollingFrame_3.LocalScript 
+	local script = Instance.new('LocalScript', ScrollingFrame_3)
+
+	local ScrollingFrame = script.Parent
+	local ContentSize = ScrollingFrame.UIListLayout.AbsoluteContentSize.X
+	ScrollingFrame.CanvasSize = UDim2.fromOffset(ContentSize+66,0)
+	ScrollingFrame.CanvasPosition = Vector2.new(ContentSize+66,0)
+	ScrollingFrame.ChildAdded:Connect(function()
+		local ContentSize = ScrollingFrame.UIListLayout.AbsoluteContentSize.X
+		ScrollingFrame.CanvasSize = UDim2.fromOffset(ContentSize+66,0)
+		ScrollingFrame.CanvasPosition = Vector2.new(ContentSize+66,0)
+	end)
+	ScrollingFrame.ChildRemoved:Connect(function()
+		local ContentSize = ScrollingFrame.UIListLayout.AbsoluteContentSize.X
+		ScrollingFrame.CanvasSize = UDim2.fromOffset(ContentSize-66,0)
+		ScrollingFrame.CanvasPosition = Vector2.new(ContentSize-66,0)
+	end)
+end
+coroutine.wrap(TBJKU_fake_script)()
+local function GAGOI_fake_script() -- TextLabel_14.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_14)
 
 	while true do
@@ -2045,8 +2063,8 @@ local function NLOH_fake_script() -- TextLabel_14.LocalScript
 		script.Parent.Text = "Current Tab is: ".._G.tab
 	end
 end
-coroutine.wrap(NLOH_fake_script)()
-local function EJYITX_fake_script() -- AutoR6Toggle.Script 
+coroutine.wrap(GAGOI_fake_script)()
+local function SXOUJVI_fake_script() -- AutoR6Toggle.Script 
 	local script = Instance.new('LocalScript', AutoR6Toggle)
 
 	local toggled = false -- The start state of the toggle
@@ -2072,9 +2090,9 @@ local function EJYITX_fake_script() -- AutoR6Toggle.Script
 		end
 	end)
 end
-coroutine.wrap(EJYITX_fake_script)()
+coroutine.wrap(SXOUJVI_fake_script)()
 -- AutoR6Toggle.R6OnOff is disabled.
-local function ABJGWB_fake_script() -- SwithcerToggle.Script 
+local function MWOILSF_fake_script() -- SwithcerToggle.Script 
 	local script = Instance.new('LocalScript', SwithcerToggle)
 
 	local toggled = false -- The start state of the toggle
@@ -2103,8 +2121,8 @@ local function ABJGWB_fake_script() -- SwithcerToggle.Script
 		end
 	end)
 end
-coroutine.wrap(ABJGWB_fake_script)()
-local function ICGXTQ_fake_script() -- ServerBtn.LocalScript 
+coroutine.wrap(MWOILSF_fake_script)()
+local function VVESJBY_fake_script() -- ServerBtn.LocalScript 
 	local script = Instance.new('LocalScript', ServerBtn)
 
 	local a = "https://raw.githubusercontent.com/XtremeSploit/Iceberg/main/Discord%20Server%20Link"
@@ -2117,10 +2135,14 @@ local function ICGXTQ_fake_script() -- ServerBtn.LocalScript
 	end)
 	
 end
-coroutine.wrap(ICGXTQ_fake_script)()
-local function BTQLQQ_fake_script() -- ScrollingFrame_4.LocalScript 
+coroutine.wrap(VVESJBY_fake_script)()
+local function KZBSEP_fake_script() -- ScrollingFrame_4.LocalScript 
 	local script = Instance.new('LocalScript', ScrollingFrame_4)
 
+	if isfolder("Scripts") == false then
+		makefolder("Scripts")
+	end
+	
 	_G.fileslist = listfiles("Scripts")
 	function tablelength()
 		local count = 0
@@ -2259,8 +2281,8 @@ local function BTQLQQ_fake_script() -- ScrollingFrame_4.LocalScript
 	end
 	
 end
-coroutine.wrap(BTQLQQ_fake_script)()
-local function FSFC_fake_script() -- ScrollingFrame_4.LocalScript 
+coroutine.wrap(KZBSEP_fake_script)()
+local function TUITQF_fake_script() -- ScrollingFrame_4.LocalScript 
 	local script = Instance.new('LocalScript', ScrollingFrame_4)
 
 	local ScrollingFrame = script.Parent
@@ -2278,13 +2300,17 @@ local function FSFC_fake_script() -- ScrollingFrame_4.LocalScript
 		ScrollingFrame.CanvasPosition = Vector2.new(0, ContentSize-32)
 	end)
 end
-coroutine.wrap(FSFC_fake_script)()
-local function QBFA_fake_script() -- refresh.LocalScript 
+coroutine.wrap(TUITQF_fake_script)()
+local function OOJHO_fake_script() -- refresh.LocalScript 
 	local script = Instance.new('LocalScript', refresh)
 
 	local condition = false
 	local i = 1
 	script.Parent.MouseButton1Click:Connect(function()
+		if isfolder("Scripts") == false then
+			makefolder("Scripts")
+		end
+		
 		local items = script.Parent.Parent.ScrollingFrame:GetChildren()
 		condition = true
 		while condition do
@@ -2436,8 +2462,8 @@ local function QBFA_fake_script() -- refresh.LocalScript
 		
 	end)
 end
-coroutine.wrap(QBFA_fake_script)()
-local function YZXQZ_fake_script() -- MainFrame.Hide/Unhide 
+coroutine.wrap(OOJHO_fake_script)()
+local function NGQXWY_fake_script() -- MainFrame.Hide/Unhide 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	local userinput = game:GetService("UserInputService")
@@ -2450,8 +2476,8 @@ local function YZXQZ_fake_script() -- MainFrame.Hide/Unhide
 		end
 	end)
 end
-coroutine.wrap(YZXQZ_fake_script)()
-local function FEBC_fake_script() -- MainFrame.Dragify 
+coroutine.wrap(NGQXWY_fake_script)()
+local function LDLS_fake_script() -- MainFrame.Dragify 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	-- Dragify
@@ -2494,8 +2520,8 @@ local function FEBC_fake_script() -- MainFrame.Dragify
 	
 	dragify(script.Parent)
 end
-coroutine.wrap(FEBC_fake_script)()
-local function XIBI_fake_script() -- MainFrame.LodingAnimetion 
+coroutine.wrap(LDLS_fake_script)()
+local function ZAOMI_fake_script() -- MainFrame.LodingAnimetion 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	local blur = Instance.new("BlurEffect", game.Lighting)
@@ -2528,4 +2554,4 @@ local function XIBI_fake_script() -- MainFrame.LodingAnimetion
 	wait()
 	script.Parent.Visible = true
 end
-coroutine.wrap(XIBI_fake_script)()
+coroutine.wrap(ZAOMI_fake_script)()
