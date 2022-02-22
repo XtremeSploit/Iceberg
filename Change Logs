@@ -1,2 +1,5 @@
 Bug Fixes
-  [+] Fixed the Scrolling in Scripts Folder
+  [+] Fixed the tabs Scrolling
+      now you can use as much tabs as you wants
+  [+] Fixed and bug where if you deleted the Scripts
+      folder the UI wouldn't load fully
